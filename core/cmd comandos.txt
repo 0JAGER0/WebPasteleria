@@ -1,0 +1,5 @@
+AQUI VAN LOS COMANDOS QUE SE NECESITEN RECORDAR
+
+-- para iniciar servidor
+
+python manage.py runserver
