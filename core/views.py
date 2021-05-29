@@ -10,3 +10,7 @@ def nosotros(request):
 
 def productos(request):
     return render(request,'core/productos.html')
+
+def contacto(request):
+    return render(request,'core/contacto.html')
+
