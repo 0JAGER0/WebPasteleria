@@ -14,3 +14,5 @@ def productos(request):
 def contacto(request):
     return render(request,'core/contacto.html')
 
+def registro(request):
+    return render(request,'core/REGISTRO.HTML')
