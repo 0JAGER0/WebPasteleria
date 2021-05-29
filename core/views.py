@@ -14,3 +14,5 @@ def productos(request):
 def contacto(request):
     return render(request,'core/contacto.html')
 
+def fomularioContac(request):
+    return render(request,'core/fomularioContac.html')
