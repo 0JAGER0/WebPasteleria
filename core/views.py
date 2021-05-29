@@ -7,3 +7,6 @@ def Start(request):
 
 def nosotros(request):
     return render(request,'core/nosotros.html')
+
+def productos(request):
+    return render(request,'core/productos.html')
