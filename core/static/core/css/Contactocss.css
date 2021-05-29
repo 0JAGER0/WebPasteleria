@@ -1,0 +1,112 @@
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+            
+            #TITULO{
+                font-family: 'lobster', cursive;
+                font-size: 30px;
+            }
+    
+            #logo{
+                margin-right: 10px;
+            }
+    
+            /*LETRA BOTON INICIO SESION*/
+            #letra_inicio{
+                color:white;
+                font-size: 15px;
+                margin-top: 7px;
+            }
+            /* LETRA REGISTRO BOTON*/
+            #letra_registro{
+                color: white;
+                margin-right: 400px;
+                font-size: 15px;
+                margin-top: 7px;
+            
+            }
+            .contenedor{
+                max-width:100%
+            }
+            
+            .Titulos{
+                text-align: center;
+                margin-top: 90px;
+                font-family: 'lobster', cursive;
+                color: brown;
+            }
+    
+            p{
+                font-family: 'Kanit', sans-serif;
+                color: brown ;    
+                font-size: 20px;          
+            }
+    
+            ul{
+                font-family: 'lobster', cursive;
+                margin-left: 40px;
+                font-size: 24px;
+            }
+    
+            iframe{
+                text-align: center;
+                max-width: 70%;
+            }
+    
+            .footer {
+                padding: 1.5em;
+                text-align: center;
+                background-color: #60371E;
+                bottom: 0;
+            }
+
+            #bottonLinkContacto{
+                margin-left: 1em;
+            }
+
+            #inicio{
+                font-size: 15px;
+                margin-top: 7px;
+            }
+
+            #nosotros{
+                font-size: 15px;
+                margin-top: 7px;
+            }
+            #productos{
+                font-size: 15px;
+                margin-top: 7px;
+            }
+            #contactos{
+                font-size: 15px;
+                margin-top: 7px;
+            }
+
+      #map{
+        max-width: 100%;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      #map img {
+        width: 90%;
+        padding: 9px;
+      }
+
+#boton_mapa{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 40px;
+}

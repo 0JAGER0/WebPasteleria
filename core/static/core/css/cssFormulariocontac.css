@@ -1,0 +1,166 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+        
+        /* TITULO BARRA NAVEGACION*/
+        
+        #TITULO{
+            font-family: 'Lobster', cursive;
+            font-size: 40px;           
+        }  
+        
+        #logo{
+            margin-right: 10px;
+        }
+
+        /*LETRA BOTON INICIO SESION*/
+        #letra_inicio{
+            color:white;
+                
+        } 
+        /* LETRA REGISTRO BOTON*/
+        #letra_registro{
+            color: white;
+            
+        }
+
+        #link_iniciar_sesion{
+            font-family: 'lobster', cursive;
+            
+        }
+    
+        #link_registro{
+            font-family: 'lobster', cursive;
+        }
+
+        ul{
+            font-family: 'lobster', cursive;
+            margin-left: 40px;
+            font-size: 24px;
+        }
+
+        #formulario{
+            width: 700px;
+            height: 800px;
+            margin: auto;
+            background: rgb(0,0,0,0.4);
+            padding: 10px 20px;
+            box-sizing: border-box;
+            margin-top: 150px;
+            border-radius: 1px;
+        }
+
+        h2{
+            color:#fff;
+            text-align: center;
+            margin: 0;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        input, textarea{
+            width: 50px;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 17px;
+            border: none;
+            width: 400px; 
+            border-radius: 10px;
+            margin-top: 125px;
+        }
+
+        textarea{
+            max-width: 100%;
+            width: 400px;
+            border-radius: 10px;
+        }
+        
+        #boton{
+            background: #31384A;
+            color: #fff;
+            padding: 20px;
+            
+        }
+
+        .footer {
+            padding: 1.5em;
+            text-align: center;
+            background-color: #60371E;
+            bottom: 0;
+        }
+
+        .BARRAz{
+            margin-top: 30px;
+            width: 600px;
+            height: 40px;
+            margin-left: 58px;
+        }
+        #rut{
+            margin-top: -10px;
+            width: 500px;
+            height: 45px;
+            margin-right: -50px;
+        }
+
+        #nombre{
+            margin-top: -10px;
+            width: 500px;
+            height: 45px;
+            margin-right: -50px;
+        }
+        
+        #correo{
+            margin-top: -10px;
+            width: 500px;
+            height: 45px;
+            margin-right: -50px;
+        }
+        
+        #telefono{
+            margin-top: -10px;
+            width: 500px;
+            height: 45px;
+            margin-right: -50px;
+        }
+  
+        #mensaje{
+            margin-top: 2px;
+            width: 500px;
+            height: 180px;
+            margin-right: -50px;
+        }
+        
+        #Enviar{
+        margin-top: 320px;
+        margin-left: 115px;
+        width:400px;
+        height: 50px;
+        }
+    
+    #l_nombre_completo{
+        margin-top: 20px;
+    }
+
+    #l_correo{
+        margin-top: 40px;
+    }
+
+    #l_numero{
+        margin-top: 60px;
+    }
+
+    #l_mensaje{
+        margin-top: 90px;
+    }
+
+    form .error{
+        color: #ff0000;
+    }          
+
+
