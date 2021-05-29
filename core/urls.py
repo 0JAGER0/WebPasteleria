@@ -1,4 +1,3 @@
-from os import name
 from django.urls import path
 from .views import Start, nosotros , productos , contacto , registro , fomularioContac , operaBlanca , merengueframbuesa, login , hojaRasca ,HojaldreManjar , Cassatta , BiscochoFrambuesa
 
