@@ -5,4 +5,5 @@ from django.shortcuts import render
 def Start(request):
     return render(request,'core/Start.html')
 
-
+def nosotros(request):
+    return render(request,'core/nosotros.html')
