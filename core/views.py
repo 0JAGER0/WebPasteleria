@@ -20,7 +20,6 @@ def fomularioContac(request):
 def registro(request):
     return render(request,'core/REGISTRO.HTML')
 
-
 def operaBlanca(request):
     return render(request,'core/operaBlanca.html')
 
@@ -38,7 +37,6 @@ def HojaldreManjar(request):
 
 def Cassatta(request):
     return render(request,'core/Cassatta.html')
-
 
 def BiscochoFrambuesa(request):
     return render(request,'core/Biscocho-Frambuesa.html')
