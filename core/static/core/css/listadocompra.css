@@ -1,128 +1,274 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;1,700&family=Bad+Script&family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        
+        .Titulos{
+            
+            font-family: 'Kanit', sans-serif;
+        }
 
-body{
-background-color: rgb(59, 34, 5);
-background-repeat: no-repeat;
-background-attachment: fixed
-}
-#letra_inicio{
-color:white;
-font-family: 'lobster', cursive;
-}
-#letra_registro{
-color: white;
-margin-right: 500px;
-font-family: 'lobster', cursive;
-}
+        .parallax {
 
-#boton_ini{
-font-family: 'lobster', cursive;
-}
+    /* MARGIN PARA CAMBIAR POSICION DE LETRA*/
 
-#nosotros{
-font-family: 'lobster', cursive;
-}
+            /* The image used */
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Pexels-photo-132694.jpg/1200px-Pexels-photo-132694.jpg");
 
-#productos{
-font-family: 'lobster', cursive;
-}
+            /* Set a specific height */
+            min-height: 590px; 
 
-#contactos{
-font-family: 'lobster', cursive;
-}
-#buscar{
-font-family: 'Lobster', cursive;
-}
-#boton_busc{
-    font-family: 'Lobster', cursive;
-}
-#TITULO{
-font-family: 'Lobster', cursive;
-font-size: 29px;
-}  
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-.Titulos{
-text-align: center;
-font-family: 'Lora', serif;
-color: rgb(255, 255, 255);
-background-color: rgb(59, 34, 5);
-margin: 15px;
-margin-top: 14px;
-font-size: 50px;
-}
-.TitulosDos{
-text-align: center;
-margin: 15px;
-color: rgb(255, 255, 255);
-font-family: 'Lora', serif;
-font-size: 30px;
-margin-top: 12px;
-}
-.grid-container {
-display: grid;
-grid-template-columns: auto auto;
-background-color: transparent;
-margin-top: -20px;
-}
-.grid-item {
-background-color: rgba(255, 255, 255, 0.8);
-font-size: 30px;
-text-align: center;
-font-family: 'Bad Script', cursive;
-padding: 10px;
-}
-img{
-width: 500px;
-height: 350px;
-max-width: 100%;
-margin: 5px;
-max-height: 100%;
-border-radius: 15px;
-}
-.parallaxUno {
-background-image: url("https://img.freepik.com/vector-gratis/fondo-abstracto-forma-geometrica-pintado-diseno-pastel_41066-1266.jpg?size=626&ext=jpg&ga=GA1.2.1356500412.1617235200");
-min-height: 500px; 
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-.parallaxDos {
-background-image: url("https://us.123rf.com/450wm/andreaobzerova/andreaobzerova1802/andreaobzerova180200118/96098134-fondo-de-minimalismo-abstracto-textura-de-papel-de-color-pastel-m%C3%ADnimas-formas-geom%C3%A9tricas-y-l%C3%ADneas-en-col.jpg?ver=6");
-min-height: 500px; 
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
+        .parallax2{
+            /* The image used */
+            background-image: url("https://ecoosfera.com/wp-content/imagenes/2019/07/pastel-mas-antiguo-tipos-historia-cualpasteles-e1563516330163.jpg");
 
-.ListaGeneral{
-margin: 10px;
-font-size: 20px;
-margin-bottom: -13px;
-padding: 1px;
-font-weight: 100;
-font-family: 'Lora', serif;
-}
-.creadores_web{
-height: 42px; 
-width: 1902px; 
-margin-top: -0.9em; 
-background-color:#60371E; 
-max-width: 100%;
-}
-.texto_creadores{
-margin-top: 2em; 
-color: blanchedalmond;
-}
-#navegador{
-background-color: #EDD8BF
-}
+            /* Set a specific height */
+            min-height: 590px; 
 
-h1{
-    text-align: left;
-    font-size: 80px;
-}
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        /* TITULO BARRA NAVEGACION*/
+        #TITULO{
+            font-family: 'Lobster', cursive;
+            font-size: 40px;
+            
+        }
+        /* link contacto*/
+        
+
+        #link_iniciar_sesion{
+            font-family: 'lobster', cursive;
+            
+        }
+    
+        #link_registro{
+            font-family: 'lobster', cursive;
+            
+        }
+        /*LETRA BOTON INICIO SESION*/
+        #letra_inicio{
+            color:white;
+            font-family: 'lobster', cursive;
+            
+        }
+        #start_boton{
+            font-family: 'lobster', cursive;
+        }
+        #nosotros_boton{
+            font-family: 'lobster', cursive;
+        }
+        #productos_boton{
+            font-family: 'lobster', cursive;
+        }
+        #contacto_boton{
+            font-family: 'lobster', cursive;
+        }
+        #barra_busqueda{
+            font-family: 'lobster', cursive;
+        }
+        #boton_buscar{
+            font-family: 'lobster', cursive;
+        }
+
+        .responsive_arreg{
+          width: 100%;
+        }
+
+        /* LETRA REGISTRO BOTON*/
+        #letra_registro{
+            color: white;
+        
+        }    
+        /*Titulo pagina*/ 
+        #TITULOH1{
+            font-family: 'Great Vibes', cursive;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 65px;
+            
+        }
+        
+        /*Titulo pagina*/ 
+        #logo{
+            margin-right: 10px;
+        }
+
+        #letra_registro{
+            margin-right: 350px;
+        }
+
+        /*subtitulo*/ 
+        #subtituloh1{
+            font-family: 'Caveat', cursive;
+            text-align: center;
+            color: whitesmoke;
+
+        }
+        /*id titulo torta*/ 
+        #tituloHoja{
+            font-family: 'Caveat', cursive;
+            font-size: 65px;
+            color: #593202;
+        }
+        /*id titulo torta*/
+        #tituloHojaldre{
+            font-family: 'Caveat', cursive;
+            font-size: 65px;
+            color: #D94C1A;
+        }  
+        /*id titulo torta*/
+        #tituloOpera{
+            font-family: 'Caveat', cursive;
+            font-size: 65px;
+            color: #732439;
+        }
+        /*id titulo torta*/
+        #h4_1{
+            color: #121212;
+            font-family: 'Arvo', serif;
+        }
+        #h4_2{
+            color: #121212;
+            font-family: 'Arvo', serif;
+        }
+        #h4_3{
+            color: #121212;
+            font-family: 'Arvo', serif;
+        }
+        /*logo*/
+        #logoInsta{
+            margin-top: -1em;
+            margin-bottom: -10px;
+        }
+        /*logo*/
+        #logoFace{
+            margin-top: -1em;
+            margin-bottom: -10px;
+        }
+        /*logo*/
+        #logoTwit{
+            margin-top: -1em;
+            margin-bottom: -10px;
+        }
+        /*logo*/
+        #logoCorreo{
+            margin-top: -1em;
+            margin-bottom: -10px;
+            
+        }
+        
+        /*imagenes al 100%*/
+        img{
+            max-width: 100%;
+        }
+        
+        .redes {           
+            text-align: center;
+            padding: 0.3em;
+        }
+        /*circulos del logos*/
+        .redes .circulo {
+            background-color: #FFF;
+            color: black;
+            display: inline-block;
+            border-radius: 4em;
+            width: 4em;
+            height: 4em;
+            font-size: 1.2em;
+            line-height: 4em;
+            text-align: center;
+            padding: 0;
+            margin: 0.3em;
+            margin-top: 1em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto ;          
+            padding: 10px;
+        }
+        .grid-item {          
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+       
+       /*FOOTER FINAL DE LA PAGINA*/
+        .footer {
+            padding: 1.5em;
+            text-align: center;
+            background-color: #60371E;
+        }
+
+        #tituloUbicacion{
+            margin-left: 1em;
+        }
+
+        #tituloLlamenos{
+            margin-left: 1em;
+        }
+
+        #bottonLinkContacto{
+            margin-left: 1em;
+        }
+
+        #tituloInfo{
+            text-align: center;
+        }
+        /*PARRAFOS DEL FONDO DESPUES DE LAS REDES SOCIALES*/
+        #parrafo1{
+            text-align: center;
+        }
+        #parrafo2{
+            text-align: center;
+        }
+        #tituloFormulario{
+            text-align: center;
+            color: #F29F05;
+        }
+        /*AJUSTES DE CARRUSEL*/
+        #fotocarrusel1{
+            border-radius: 20px;
+        }
+        #fotocarrusel2{
+            border-radius: 20px;
+        }
+        #fotocarrusel3{
+            border-radius: 20px;
+        }
+
+        #boton_clima{
+            margin-top: 2em; 
+            margin-left: 200px;
+        }
+
+        #boton_clima{
+            margin-top: 1em; 
+            margin-left: 150px; 
+            width: 150px;
+        }
+      
+        #parrafo_clima{
+            margin-top: 43px; 
+            margin-left: 25px; 
+            font-size: 18px; 
+            color: #FDF0D5;
+        }
