@@ -60,8 +60,8 @@ def productos(request, id):
 def contacto(request):
     return render(request,'core/contacto.html')
 
-def fomularioContac(request):
-    return render(request,'core/fomularioContac.html')
+def formularioContac(request):
+    return render(request,'core/formularioContac.html')
 
 def registros(request):
 
