@@ -26,22 +26,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Start.html">Inicio <span class="sr-only"></span></a>
+                        <a class="nav-link" href="{% url 'Start'%}" id="start_boton">Inicio <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="nosotros.html">Nosotros <span class="sr-only"></span></a>
+                        <a class="nav-link" href="{% url 'nosotros'%}" id="nosotros_boton">Nosotros <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="productos.html">Productos <span class="sr-only"></span></a>
+                        <a class="nav-link" href="productos.html" id="productos_boton">Productos <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="contacto.html">Contacto <span class="sr-only"></span></a>
+                        <a class="nav-link" href="{% url 'contacto' %}"  id="contacto_boton">Contacto <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active" id="link_iniciar_sesion">
-                        <a class="nav-link" href="LOGIN.HTML" id="letra_inicio">Iniciar Sesion <span class="sr-only"></span></a>
+                        <a class="nav-link" href="{% url 'login' %}" id="letra_inicio">Iniciar Sesion <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active" id="link_registro">
-                        <a class="nav-link" href="REGISTRO.HTML" id="letra_registro">Registro <span class="sr-only"></span></a>
+                        <a class="nav-link" href="{% url 'registros' %}" id="letra_registro">Registro <span class="sr-only"></span></a>
                     </li>
                 </ul>
                 <form action="busqueda" method="GET" class="form-inline d-flex">
@@ -82,7 +82,7 @@
             
             <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
 
-            <p><a href="../librerias/LOGIN.HTML">¿Ya tengo Cuenta? </a></p>
+            <p><a href="{% url 'login' %}">¿Ya tengo Cuenta? </a></p>
         </form>
     </section>    
 </div>
