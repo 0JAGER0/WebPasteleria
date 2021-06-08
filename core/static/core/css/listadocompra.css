@@ -14,38 +14,14 @@
             font-family: 'Kanit', sans-serif;
         }
 
-        .parallax {
 
-    /* MARGIN PARA CAMBIAR POSICION DE LETRA*/
-
-            /* The image used */
-            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Pexels-photo-132694.jpg/1200px-Pexels-photo-132694.jpg");
-
-            /* Set a specific height */
-            min-height: 590px; 
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        body{
+            background-image: url("https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg");
+            background-color: #F2EAD0;
+            background-blend-mode: soft-light;
+            background-attachment: fixed; 
         }
 
-        .parallax2{
-            /* The image used */
-            background-image: url("https://ecoosfera.com/wp-content/imagenes/2019/07/pastel-mas-antiguo-tipos-historia-cualpasteles-e1563516330163.jpg");
-
-            /* Set a specific height */
-            min-height: 590px; 
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-        /* TITULO BARRA NAVEGACION*/
         #TITULO{
             font-family: 'Lobster', cursive;
             font-size: 40px;
@@ -94,181 +70,12 @@
 
         /* LETRA REGISTRO BOTON*/
         #letra_registro{
-            color: white;
-        
-        }    
-        /*Titulo pagina*/ 
-        #TITULOH1{
-            font-family: 'Great Vibes', cursive;
-            text-align: center;
-            color: whitesmoke;
-            font-size: 65px;
-            
-        }
-        
-        /*Titulo pagina*/ 
-        #logo{
-            margin-right: 10px;
-        }
-
-        #letra_registro{
             margin-right: 350px;
-        }
-
-        /*subtitulo*/ 
-        #subtituloh1{
-            font-family: 'Caveat', cursive;
-            text-align: center;
-            color: whitesmoke;
-
-        }
-        /*id titulo torta*/ 
-        #tituloHoja{
-            font-family: 'Caveat', cursive;
-            font-size: 65px;
-            color: #593202;
-        }
-        /*id titulo torta*/
-        #tituloHojaldre{
-            font-family: 'Caveat', cursive;
-            font-size: 65px;
-            color: #D94C1A;
-        }  
-        /*id titulo torta*/
-        #tituloOpera{
-            font-family: 'Caveat', cursive;
-            font-size: 65px;
-            color: #732439;
-        }
-        /*id titulo torta*/
-        #h4_1{
-            color: #121212;
-            font-family: 'Arvo', serif;
-        }
-        #h4_2{
-            color: #121212;
-            font-family: 'Arvo', serif;
-        }
-        #h4_3{
-            color: #121212;
-            font-family: 'Arvo', serif;
-        }
-        /*logo*/
-        #logoInsta{
-            margin-top: -1em;
-            margin-bottom: -10px;
-        }
-        /*logo*/
-        #logoFace{
-            margin-top: -1em;
-            margin-bottom: -10px;
-        }
-        /*logo*/
-        #logoTwit{
-            margin-top: -1em;
-            margin-bottom: -10px;
-        }
-        /*logo*/
-        #logoCorreo{
-            margin-top: -1em;
-            margin-bottom: -10px;
-            
-        }
-        
-        /*imagenes al 100%*/
-        img{
-            max-width: 100%;
-        }
-        
-        .redes {           
-            text-align: center;
-            padding: 0.3em;
-        }
-        /*circulos del logos*/
-        .redes .circulo {
-            background-color: #FFF;
-            color: black;
-            display: inline-block;
-            border-radius: 4em;
-            width: 4em;
-            height: 4em;
-            font-size: 1.2em;
-            line-height: 4em;
-            text-align: center;
-            padding: 0;
-            margin: 0.3em;
-            margin-top: 1em;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto ;          
-            padding: 10px;
-        }
-        .grid-item {          
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
-       
-       /*FOOTER FINAL DE LA PAGINA*/
-        .footer {
-            padding: 1.5em;
-            text-align: center;
-            background-color: #60371E;
-        }
-
-        #tituloUbicacion{
-            margin-left: 1em;
-        }
-
-        #tituloLlamenos{
-            margin-left: 1em;
-        }
-
-        #bottonLinkContacto{
-            margin-left: 1em;
-        }
-
-        #tituloInfo{
-            text-align: center;
-        }
-        /*PARRAFOS DEL FONDO DESPUES DE LAS REDES SOCIALES*/
-        #parrafo1{
-            text-align: center;
-        }
-        #parrafo2{
-            text-align: center;
-        }
-        #tituloFormulario{
-            text-align: center;
-            color: #F29F05;
-        }
-        /*AJUSTES DE CARRUSEL*/
-        #fotocarrusel1{
-            border-radius: 20px;
-        }
-        #fotocarrusel2{
-            border-radius: 20px;
-        }
-        #fotocarrusel3{
-            border-radius: 20px;
-        }
-
-        #boton_clima{
-            margin-top: 2em; 
-            margin-left: 200px;
-        }
-
-        #boton_clima{
-            margin-top: 1em; 
-            margin-left: 150px; 
-            width: 150px;
-        }
+            color: white;
+        }    
       
-        #parrafo_clima{
-            margin-top: 43px; 
-            margin-left: 25px; 
-            font-size: 18px; 
-            color: #FDF0D5;
+        .titlist{
+            text-align: center;
+            margin-top: 100px;
+            font-family: 'Lobster', cursive;
         }
