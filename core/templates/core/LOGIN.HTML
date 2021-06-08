@@ -1,4 +1,4 @@
- {% load static %}
+  {% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,7 +33,7 @@
                             <a class="nav-link" href="{% url 'nosotros'%}" id="nosotros_boton">Nosotros <span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="productos.html"id="productos_boton">Productos <span class="sr-only"></span></a>
+                            <a class="nav-link" href="" id="productos_boton">Productos <span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="{% url 'contacto'%}" id="contacto_boton">Contacto <span class="sr-only"></span></a>
@@ -56,13 +56,13 @@
 
 
 <section class="login-box" id="cuadr_regis">
-<img class="avatar" src="../imagenes/un-pedazo-de-torta-del-panna-icono-pastel-queso-125041818.jpg" alt="icono-pasteleria">
+<img class="avatar" src="{% static 'core/img/un-pedazo-de-torta-del-panna-icono-pastel-queso-125041818.jpg' %}" alt="icono-pasteleria">
 <h4> Iniciar Sesion</h4>
     <form id="formulario" name="formulario">
         
         <div class="BARRAz">
             <label for="usuario" id="usuario_completo" >Usuario</label>
-            <input type="text" class="form-control" name="usuario" id="usuario" placeholder="usuario" required>
+            <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario" required>
         </div>
 
         <div class="BARRAz">

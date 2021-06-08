@@ -5,11 +5,10 @@
 
 
 body {
-    background: url(../imagenes/torta.jpg) no-repeat center top;
-    background-size: cover;
+    background-image: url("https://cdn.kiwilimon.com/articuloimagen/16907/16908.jpg");
+    background-size: cover ;
     font-family: sans-serif;
-    height: 100vh;   
-    background-attachment: fixed;
+    height: 100vh; 
     max-width: 100%;
 }
 
@@ -25,7 +24,7 @@ body {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50% );
-    box-sizing: border-box;
+    border-radius: 60px 60px 60px 60px;
     padding: 70px 30px;
     font-family: 'Lobster', cursive;
 }
