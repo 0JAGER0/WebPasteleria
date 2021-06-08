@@ -3,7 +3,7 @@ from .views import Start, nosotros , productos , contacto , registros , formular
 
 urlpatterns = [
     path('',Start, name="Start"),
-    path('form-nosotros',nosotros,name="nosotros"),
+    path('form-nosotros/',nosotros,name="nosotros"),
 
     path('form-productos/<id>',productos,name="productos"),
 
