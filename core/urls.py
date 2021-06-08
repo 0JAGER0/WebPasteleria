@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import Start, nosotros , productos , contacto , registros , formularioContac , operaBlanca , merengueframbuesa, login , hojaRasca ,HojaldreManjar , Cassatta , BiscochoFrambuesa
+from .views import Start, nosotros , productos , contacto , registros , formularioContac , operaBlanca , merengueframbuesa, login , hojaRasca ,HojaldreManjar , Cassatta , BiscochoFrambuesa,listadocompra
 
 urlpatterns = [
     path('',Start, name="Start"),
-    path('form-nosotros',nosotros,name="nosotros"),
+    path('form-nosotros/',nosotros,name="nosotros"),
 
     path('form-productos/<id>',productos,name="productos"),
 
@@ -17,6 +17,6 @@ urlpatterns = [
     path('Hojaldre-Manjar/',HojaldreManjar,name="Hojaldre-Manjar"),
     path('Cassatta/',Cassatta,name="Cassatta"),
     path('Biscocho-Frambuesa/',BiscochoFrambuesa,name="Biscocho-Frambuesa"),
-    
+    path('listadocompra/',listadocompra,name="listadocompra"),
 
 ]

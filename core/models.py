@@ -16,8 +16,6 @@ class registro(models.Model):
     def __str__(self):
         return f'{self.idRegistro}, {self.nombres}'
         
-
-
 class formulario(models.Model):
     rut = models.CharField(primary_key=True, verbose_name="run", max_length=12)
     nombreCompleto = models.CharField(max_length=100, verbose_name="name_completo")
@@ -27,6 +25,15 @@ class formulario(models.Model):
 
     def __str__(self):
         return self.rut
+
+class listadoTortas(models.Model):
+    idtorta = models.AutoField(primary_key=True, verbose_name="id_torta")
+    torta = models.CharField(max_length=50, verbose_name="nombre torta")
+    tipotorta = models.CharField(max_length=50, verbose_name="nombre torta")
+    tamaño = models.CharField(max_length=50, verbose_name="nombre torta")
+
+    def __str__(self):
+        return self.idtorta
 
 '''
 class carrito(models.Model):

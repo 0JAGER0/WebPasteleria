@@ -49,6 +49,9 @@
                         <li class="nav-item active" id="link_registro">
                             <a class="nav-link" href="{% url 'registros' %}" id="letra_registro">Registro <span class="sr-only">(current)</span></a>
                         </li> 
+                        <li class="nav-item active" id="link_registro">
+                            <a class="nav-link" href="{% url 'listadocompra' %}" id="letra_registro">carro <span class="sr-only">(current)</span></a>
+                        </li> 
                     </ul>
                     <form method="GET" class="form-inline">
                         <input class="form-control mr-sm-2" id="barra_busqueda" type="text" placeholder="Buscar" aria-label="Search" name="buscando">
@@ -56,10 +59,10 @@
                     </form>
                 </div>
         </nav>    
-            <nav class="container">
+            
             
 
-                    <a class="navbar-brand" id="TITULO" >Cakes el delicioso</a>   
+        <a class="navbar-brand" id="TITULO" >Cakes el delicioso</a>   
     
     </header>
 
@@ -88,7 +91,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h4 id="h4_1">DETACADOS</h4>
                             <p id="tituloHoja">Hojarasca</p>
-                            <a style="color: white; font-size: 30px;" href="{% url 'hojaRasca'%}">Ver pastel aqui</a>
+                            <a style="color: white; font-size: 30px;" href="{% url 'hojaRasca' %}">Ver pastel aqui</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -96,7 +99,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h4 id="h4_2">DETACADOS</h4>
                             <p id="tituloHojaldre">Hojaldre Manjar Chantilly Frambuesa</p>
-                            <a style="color: white; font-size: 30px;" href="{% url 'Hojaldre-Manjar'%}">Ver pastel aqui</a>
+                            <a style="color: white; font-size: 30px;" href="{% url 'Hojaldre-Manjar' %}">Ver pastel aqui</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -104,7 +107,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h4 id="h4_3">DETACADOS</h4>
                             <p id="tituloOpera">Opera Blanca</p>
-                            <a style="color: white; font-size: 30px;" href="{% url 'operaBlanca'%}">Ver pastel aqui</a>
+                            <a style="color: white; font-size: 30px;" href="{% url 'operaBlanca' %}">Ver pastel aqui</a>
                         </div>
                     </div>
                     </div>
@@ -256,7 +259,7 @@
                     <td> <a href="{% url 'productos' ve.rut %}"> Modificar</a> </td> </tr>
                     {% endfor %}
                 </table>
-                <a href="{% url 'nosotros'%}"> Nuevo formularioooo </a>
+                <a href=""> Nuevo formularioooo </a>
 
                 <div>
        

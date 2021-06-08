@@ -1,0 +1,81 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        
+        .Titulos{
+            
+            font-family: 'Kanit', sans-serif;
+        }
+
+
+        body{
+            background-image: url("https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg");
+            background-color: #F2EAD0;
+            background-blend-mode: soft-light;
+            background-attachment: fixed; 
+        }
+
+        #TITULO{
+            font-family: 'Lobster', cursive;
+            font-size: 40px;
+            
+        }
+        /* link contacto*/
+        
+
+        #link_iniciar_sesion{
+            font-family: 'lobster', cursive;
+            
+        }
+    
+        #link_registro{
+            font-family: 'lobster', cursive;
+            
+        }
+        /*LETRA BOTON INICIO SESION*/
+        #letra_inicio{
+            color:white;
+            font-family: 'lobster', cursive;
+            
+        }
+        #start_boton{
+            font-family: 'lobster', cursive;
+        }
+        #nosotros_boton{
+            font-family: 'lobster', cursive;
+        }
+        #productos_boton{
+            font-family: 'lobster', cursive;
+        }
+        #contacto_boton{
+            font-family: 'lobster', cursive;
+        }
+        #barra_busqueda{
+            font-family: 'lobster', cursive;
+        }
+        #boton_buscar{
+            font-family: 'lobster', cursive;
+        }
+
+        .responsive_arreg{
+          width: 100%;
+        }
+
+        /* LETRA REGISTRO BOTON*/
+        #letra_registro{
+            margin-right: 350px;
+            color: white;
+        }    
+      
+        .titlist{
+            text-align: center;
+            margin-top: 100px;
+            font-family: 'Lobster', cursive;
+        }

@@ -104,3 +104,6 @@ def Cassatta(request):
 
 def BiscochoFrambuesa(request):
     return render(request,'core/Biscocho-Frambuesa.html')
+
+def listadocompra(request):
+    return render(request,'core/listadocompra.html')
