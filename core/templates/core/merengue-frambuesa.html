@@ -22,22 +22,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Start.html" id="boton_ini">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'Start' %}" id="boton_ini">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="nosotros.html" id="nosotros">Nosotros <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'nosotros' %}" id="nosotros">Nosotros <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="productos.html" id="productos">Productos <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="contacto.html" id="contactos">Contacto <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'contacto' %}" id="contactos">Contacto <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active" id="link_iniciar_sesion">
-                        <a class="nav-link" href="LOGIN.HTML" id="letra_inicio">Iniciar Sesion <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'login' %}" id="letra_inicio">Iniciar Sesion <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active" id="link_registro">
-                        <a class="nav-link" href="REGISTRO.HTML" id="letra_registro">Registro <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'registros' %}" id="letra_registro">Registro <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <form class="form-inline">
@@ -98,12 +98,12 @@
     <div class="grid-container">
       <div class="grid-item"><img src="https://www.mozart.cl/wp-content/uploads/2020/06/hojaldre-manjar-frambuesa.jpg" alt="Hojaldre Manjar Chantilly Frambuesa"></div>
       <div class="grid-item"><img src="https://www.mozart.cl/wp-content/uploads/2018/04/opera-blanca.jpg" alt="Opera Blanca"></div>    
-      <div class="grid-item"><a href="Hojaldre_Manjar.html" class="hipervinculo">Hojaldre Manjar</a></div>
-      <div class="grid-item"><a href="operaBlanca.html" class="hipervinculo">Opera Blanca</a></div>  
+      <div class="grid-item"><a href="{% url 'Hojaldre-Manjar' %}" class="hipervinculo">Hojaldre Manjar</a></div>
+      <div class="grid-item"><a href="{% url 'operaBlanca' %}" class="hipervinculo">Opera Blanca</a></div>  
       <div class="grid-item"><img src="https://www.mozart.cl/wp-content/uploads/2020/05/tmp65AD.jpg" alt="Cassatta"></div>
       <div class="grid-item"><img src="https://www.mozart.cl/wp-content/uploads/2018/04/Biscocho-Frambuesa.jpg" alt="Frambuesa"></div> 
-      <div class="grid-item"><a href="Cassatta.html" class="hipervinculo">Cassatta</a></div>
-      <div class="grid-item"><a href="Biscocho-Frambuesa.html" class="hipervinculo">Biscocho Frambuesa</a></div>   
+      <div class="grid-item"><a href="{% url 'Cassata' %}" class="hipervinculo">Cassatta</a></div>
+      <div class="grid-item"><a href="{% url 'Biscocho-Frambuesa' %}" class="hipervinculo">Biscocho Frambuesa</a></div>   
     </div>
 
     <div class="TitulosDos">
