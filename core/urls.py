@@ -4,17 +4,19 @@ from .views import Start, nosotros , productos , contacto , registros , fomulari
 urlpatterns = [
     path('',Start, name="Start"),
     path('form-nosotros',nosotros,name="nosotros"),
+
     path('form-productos/<id>',productos,name="productos"),
+
     path('contacto/',contacto,name="contacto"),
     path('registros/',registros,name="registros"),
     path('formularioContac/',fomularioContac,name="formularioContac"),
-    path('',operaBlanca,name="operaBlanca"),
-    path('',merengueframbuesa,name="merengue-frambuesa"),
-    path('',login,name="login"),
-    path('',hojaRasca,name="hojaRasca"),
-    path('',HojaldreManjar,name="Hojaldre-Manjar"),
-    path('',Cassatta,name="Cassatta"),
-    path('',BiscochoFrambuesa,name="Biscocho-Frambuesa"),
+    path('operaBlanca/',operaBlanca,name="operaBlanca"),
+    path('merengue-frambuesa/',merengueframbuesa,name="merengue-frambuesa"),
+    path('login/',login,name="login"),
+    path('hojaRasca/',hojaRasca,name="hojaRasca"),
+    path('Hojaldre-Manjar/',HojaldreManjar,name="Hojaldre-Manjar"),
+    path('Cassatta/',Cassatta,name="Cassatta"),
+    path('Biscocho-Frambuesa/',BiscochoFrambuesa,name="Biscocho-Frambuesa"),
     
 
 ]

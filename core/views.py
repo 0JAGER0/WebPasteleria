@@ -91,7 +91,7 @@ def merengueframbuesa(request):
     return render(request,'core/merengue-frambuesa.html')
 
 def login(request):
-    return render(request,'core/LOGIN.HTML')
+    return render(request,'core/login.html')
 
 def hojaRasca(request):
     return render(request,'core/hojaRasca.html')
