@@ -1,15 +1,61 @@
-from django.shortcuts import render
+from core.forms import FormularioForm,RegistroForm
+from django.shortcuts import redirect, render
+from .models import formulario, registro
+
 
 # Create your views here.
 
+
 def Start(request):
-    return render(request,'core/Start.html')
+
+    formularios = formulario.objects.all()
+
+    datos= {
+        'formularios':formularios
+    }
+
+    return render(request,'core/Start.html', datos)
 
 def nosotros(request):
-    return render(request,'core/nosotros.html')
 
-def productos(request):
-    return render(request,'core/productos.html')
+    datos = {
+        'form':FormularioForm() 
+    }
+
+    if request.method=='POST':
+        formularioo = FormularioForm(request.POST)
+        if request.method == 'POST':
+            try:
+                if formularioo.is_valid:
+                    formularioo.save()
+
+                    datos['mensaje'] ="guardados correctamente"
+
+            except:
+                datos['mensaje'] ="no se pudo guardar"
+    
+
+    return render(request,'core/nosotros.html',datos)
+
+
+def productos(request, id):
+
+    formulariio = formulario.objects.get(rut=id)
+
+    datoss = {
+        'form': FormularioForm(instance=formulariio)
+    }
+
+    if request.method== 'POST':
+
+        formulariio = FormularioForm(data=request.POST,instance=formulario)
+
+        if formulariio.is_valid:
+            formulariio.save()
+
+            datoss['mensaje'] = "modificados correctamente"
+
+    return render(request,'core/productos.html',datoss)
 
 def contacto(request):
     return render(request,'core/contacto.html')
@@ -17,8 +63,26 @@ def contacto(request):
 def fomularioContac(request):
     return render(request,'core/fomularioContac.html')
 
-def registro(request):
-    return render(request,'core/REGISTRO.HTML')
+def registros(request):
+
+    datos = {
+        'form':RegistroForm() 
+    }
+
+    if request.method=='POST':
+        formulariio = RegistroForm(request.POST)
+        if request.method == 'POST':
+            try:
+                if formulariio.is_valid:
+                    formulariio.save()
+
+                    datos['mensaje'] ="GUARDADO"
+
+            except:
+                datos['mensaje'] ="NO GUARDADO"
+
+    return render(request,'core/registros.html')
+
 
 def operaBlanca(request):
     return render(request,'core/operaBlanca.html')
