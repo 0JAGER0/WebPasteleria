@@ -26,19 +26,16 @@ class formulario(models.Model):
     def __str__(self):
         return self.rut
 
+
 class listadoTortas(models.Model):
     idtorta = models.AutoField(primary_key=True, verbose_name="id_torta")
     torta = models.CharField(max_length=50, verbose_name="nombre torta")
-    tipotorta = models.CharField(max_length=50, verbose_name="nombre torta")
-    tamaño = models.CharField(max_length=50, verbose_name="nombre torta")
+    tipotorta = models.CharField(max_length=50, verbose_name="tipo torta")
+    tamaño = models.CharField(max_length=50, verbose_name="tamaño torta")
+    stock = models.IntegerField( verbose_name="cantidad tortas")
 
     def __str__(self):
-        return self.idtorta
+        return f'{self.idtorta}'
 
-'''
-class carrito(models.Model):
-    idCarro = models.IntegerField(primary_key=True, verbose_name="id_carro")
-    nombreTorta = models.CharField(max_length=50, verbose_name="torta")
-'''
 
 
