@@ -134,9 +134,6 @@ def mantenedormod(request,pk):
 def BiscochoFrambuesa(request):
     return render(request,'core/Biscocho-Frambuesa.html')
 
-def listadocompra(request):
-    return render(request,'core/listadocompra.html')
-
 def agregarTorta(request):
 
     datos = {
@@ -164,3 +161,14 @@ def deletorta(request,pk):
     torta.delete()
 
     return redirect(to='mantenedor')
+
+
+def listadocompra(request):
+
+    tortas = listadoTortas.objects.all()
+
+    datos = {
+        'tortas':tortas
+    }
+
+    return render(request,'core/listadocompra.html',datos)
