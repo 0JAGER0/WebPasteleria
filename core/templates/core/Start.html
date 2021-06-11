@@ -187,18 +187,18 @@
                         <br>
                         <p class="text-left" style="font-size: 22px; color: #FDF0D5;">Una de las categorias de pasteles mas economicas y de buena calidad son los pasteles especiales, con pasteles con y sin azucar</p>
                         
-                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'Hojaldre-Manjar'%}">Comprar Especial Con Azucar</a>
+                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'Hojaldre-Manjar'%}">Ver Especial Con Azucar</a>
                         <br>  
-                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'operaBlanca'%}">Comprar Especial Sin Azucar</a>
+                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'operaBlanca'%}">Ver Especial Sin Azucar</a>
                     </div>
                     <div class="grid-item"><img src="https://portales.vilbo.com/files/uploads/images/articulos/2020/sacher/scher-ovando.jpg" style="width: 400px;" alt="Pastel Refinado"/> 
                         <h3 style="font-family: 'Caveat', cursive;"> Pastel Refinado</h3> 
                         <br>
                         <p class="text-left" style="font-size: 22px; color:#FDF0D5; ">Una de las mejores categorias de pastesles que destaca en todo calidad de sabor y diseños especiales, con pastesles con y sin azucar</p>
                                      
-                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'hojaRasca'%}">Comprar Refinado Con Azucar</a>
+                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'hojaRasca'%}">Ver Refinado Con Azucar</a>
                         <br>  
-                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'Biscocho-Frambuesa'%}">Comprar Refinado Sin Azucar</a>
+                        <a style="color: whitesmoke; font-family: 'Lato', sans-serif; font-size: 20px;" href="{% url 'Biscocho-Frambuesa'%}">Ver Refinado Sin Azucar</a>
                     </div>
                 </div>     
             </div>
@@ -241,24 +241,7 @@
                 
             </div>
 
-                <hr>
-                <hr>
-                <hr>
 
-                <div class="row">
-                    <h1> LISTADO FORMULARIOS</h1>
-                </div>
-                <div class="row">
-                <table border= 1>
-                    <tr> <td>RUT</td>  <td>NOMBRE completo</td> <td>correo</td> <td>numero telefono</td> <td>mesanjes</td> <th scope="col"> opciones</th> </tr>
-                    {% for ve in formularios %}
-                    <tr> <td>{{ve.rut}} </td> <td>{{ve.nombreCompleto}} </td> <td>{{ve.correo_electronico}} </td> <td>{{ve.numero}} </td> <td>{{ve.mensaje}} </td> 
-                    <td> <a href="{% url 'productos' ve.rut %}"> Modificar</a> </td> </tr>
-                    {% endfor %}
-                </table>
-                <a href="{% url 'nosotros'%}"> Nuevo formularioooo </a>
-
-                <div>
        
     <!--FOOTER-->
     <nav class="nav bg text-white footer" id="desarrolladores">

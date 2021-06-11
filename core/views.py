@@ -8,54 +8,15 @@ from .models import formulario, registro, listadoTortas
 
 def Start(request):
 
-    formularios = formulario.objects.all()
-
-    datos= {
-        'formularios':formularios
-    }
-
-    return render(request,'core/Start.html', datos)
+    return render(request,'core/Start.html')
 
 def nosotros(request):
 
-    datos = {
-        'form':FormularioForm() 
-    }
+    return render(request,'core/nosotros.html')
 
-    if request.method=='POST':
-        formularioo = FormularioForm(request.POST)
-        if request.method == 'POST':
-            try:
-                if formularioo.is_valid:
-                    formularioo.save()
+def productos(request):
 
-                    datos['mensaje'] ="guardados correctamente"
-
-            except:
-                datos['mensaje'] ="no se pudo guardar"
-    
-
-    return render(request,'core/nosotros.html',datos)
-
-
-def productos(request, id):
-
-    formulariio = formulario.objects.get(rut=id)
-
-    datoss = {
-        'form': FormularioForm(instance=formulariio)
-    }
-
-    if request.method== 'POST':
-
-        formulariio = FormularioForm(data=request.POST,instance=formulario)
-
-        if formulariio.is_valid:
-            formulariio.save()
-
-            datoss['mensaje'] = "modificados correctamente"
-
-    return render(request,'core/productos.html',datoss)
+    return render(request,'core/productos.html')
 
 def contacto(request):
     return render(request,'core/contacto.html')
@@ -65,24 +26,7 @@ def formularioContac(request):
 
 def registros(request):
 
-    datos = {
-        'form':RegistroForm() 
-    }
-
-    if request.method=='POST':
-        formulariio = RegistroForm(request.POST)
-        if request.method == 'POST':
-            try:
-                if formulariio.is_valid:
-                    formulariio.save()
-
-                    datos['mensaje'] ="GUARDADO"
-
-            except:
-                datos['mensaje'] ="NO GUARDADO"
-
     return render(request,'core/registros.html')
-
 
 def operaBlanca(request):
     return render(request,'core/operaBlanca.html')

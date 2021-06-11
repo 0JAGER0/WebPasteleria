@@ -92,23 +92,6 @@
         Desarrollo de paginas web (grupo 7) Duoc uc 2021
     </nav>
 
-    <div class="row">
-        <form method="post" action="" id="formularioo">
-        {% csrf_token %}
-        <div class="form-group"> 
-        {{form.as_table}}
-        </div>
-
-        <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
-        <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
-        <div class="alert alert-danger" id="error" role="alert"></div>
-
-        </form>
-
-        <div class="alert alert-success" role="alert">
-            {{mensaje}}
-        </div>
-    </div>
 
     <!--Scripts separados-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

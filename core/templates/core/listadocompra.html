@@ -57,7 +57,7 @@
         <table border="5">
             <tr> <td>Torta</td>  <td>Tamaño</td> <td>Tipo Torta</td> <td>Stock</td> </tr>
             {% for torta in tortas %}
-            <tr> <td>{{torta.torta}} </td> <td>{{torta.tamaño}} </td> <td>{{torta.tipotorta}} </td> <td>{{torta.stock}} </td> <td><a href="{% url 'mantenedormod' torta.idtorta %}">COMPRAR</a> </td> </tr> 
+            <tr> <td>{{torta.torta}} </td> <td>{{torta.tamaño}} </td> <td>{{torta.tipotorta}} </td> <td>{{torta.stock}} </td> <td>{{torta.foto}} </td> <td><a href="{% url 'mantenedormod' torta.idtorta %}">COMPRAR</a> </td> </tr> 
                   
             {% endfor %}
         </table>

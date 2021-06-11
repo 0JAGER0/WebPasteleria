@@ -20,7 +20,7 @@ class RegistroForm(ModelForm):
 class listadoTortasForm(ModelForm):
     class Meta:
         model = listadoTortas
-        fields = ['idtorta','torta','tipotorta','tamaño','stock']
+        fields = ['idtorta','torta','tipotorta','tamaño','stock','foto']
 
 
 

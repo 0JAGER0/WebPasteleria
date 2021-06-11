@@ -3,9 +3,9 @@ from .views import Start, deletorta,agregarTorta, mantenedor, nosotros , product
 
 urlpatterns = [
     path('',Start, name="Start"),
-    path('form-nosotros/',nosotros,name="nosotros"),
+    path('nosotros/',nosotros,name="nosotros"),
 
-    path('form-productos/<id>',productos,name="productos"),
+    path('productos/',productos,name="productos"),
 
     path('contacto/',contacto,name="contacto"),
     path('registros/',registros,name="registros"),
