@@ -1,5 +1,7 @@
 from django.urls import path
 from .views import Start, deletorta,agregarTorta, mantenedor, nosotros , productos , contacto , registros , formularioContac , operaBlanca , merengueframbuesa, login , hojaRasca ,HojaldreManjar , Cassatta , BiscochoFrambuesa,listadocompra,mantenedormod
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('',Start, name="Start"),
@@ -23,3 +25,4 @@ urlpatterns = [
     path('agregartorta/',agregarTorta,name="agregartorta"),
     path('deletorta/<pk>/',deletorta,name="deletorta")
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
