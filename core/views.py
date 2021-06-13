@@ -4,7 +4,8 @@ from .models import formulario, registro, listadoTortas
 from django.views.generic import View
 from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpRequest
-
+from django.contrib import messages
+from .forms import UserRegisterForm
 
 # Create your views here.
 
@@ -16,6 +17,10 @@ def Start(request):
 def nosotros(request):
 
     return render(request,'core/nosotros.html')
+
+def logout(request):
+
+    return render(request,'core/logout.html')
 
 def productos(request):
 
@@ -29,14 +34,18 @@ def formularioContac(request):
 
 def registros(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('login/')
+            username = form.cleaned_data['username']
+            messages.success(request, f'El usuario {username} a sido creado')
+            return redirect('Start')
     else:
-        form = UserCreationForm()
+        form = UserRegisterForm()
 
-    return render(request,'core/registros.html')
+    context = { 'form' : form }
+
+    return render(request,'core/registros.html',context)
 
 def operaBlanca(request):
     return render(request,'core/operaBlanca.html')
