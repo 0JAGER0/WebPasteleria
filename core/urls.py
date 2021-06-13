@@ -3,6 +3,7 @@ from .views import Start, deletorta,agregarTorta, mantenedor, nosotros , product
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('',Start, name="Start"),
     path('nosotros/',nosotros,name="nosotros"),
@@ -24,5 +25,8 @@ urlpatterns = [
     path('mantenedormod/<pk>',mantenedormod,name="mantenedormod"),
     path('agregartorta/',agregarTorta,name="agregartorta"),
     path('deletorta/<pk>/',deletorta,name="deletorta")
-]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+
+
+
