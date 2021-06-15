@@ -83,7 +83,7 @@ def mantenedormod(request,pk):
     }
 
     if request.method == 'POST':
-        formularioeditado = listadoTortasForm(request.FILES,data=request.POST,instance=torta)
+        formularioeditado = listadoTortasForm(data=request.POST,instance=torta,)
 
         if formularioeditado.is_valid:
             formularioeditado.save()
@@ -132,10 +132,15 @@ def deletortaLista(request,pk):
     }
 
     torta = listadoTortas.objects.get(idtorta = pk)
+    
+    numero = 0+1
 
-    torta.delete()
+    if torta.delete():
 
-    datos['mensaje']='Gracias por haber comprado nuestra tortas, puede pagar y retirarla en nuestra tienda su numero de boleta es {}'
+        datos['mensaje']='Gracias por haber comprado nuestra tortas, puede pagar y retirarla en nuestra tienda su numero de boleta es {}'
+
+    else:
+        datos['mensaje']='Hubo algun error'
 
     return redirect(to='listadocompra')
 
