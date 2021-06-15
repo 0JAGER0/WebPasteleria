@@ -83,7 +83,7 @@ def mantenedormod(request,pk):
     }
 
     if request.method == 'POST':
-        formularioeditado = listadoTortasForm(request.FILES,data=request.POST,instance=torta)
+        formularioeditado = listadoTortasForm(data=request.POST,instance=torta)
 
         if formularioeditado.is_valid:
             formularioeditado.save()
