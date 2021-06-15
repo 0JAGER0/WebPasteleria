@@ -104,7 +104,7 @@ def agregarTorta(request):
     }
 
     if request.method=='POST':
-        formularioo = listadoTortasForm(request.POST)
+        formularioo = listadoTortasForm(request.POST,request.FILES)
         try:
             if formularioo.is_valid:
                 formularioo.save()

@@ -21,7 +21,7 @@ class RegistroForm(ModelForm):
 class listadoTortasForm(ModelForm):
     class Meta:
         model = listadoTortas
-        fields = ['idtorta','torta','tipotorta','tamaño','stock','foto']
+        fields = ['idtorta','torta','tipotorta','tamanio','stock','foto']
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()

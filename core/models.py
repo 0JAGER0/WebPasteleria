@@ -31,9 +31,9 @@ class listadoTortas(models.Model):
     idtorta = models.AutoField(primary_key=True, verbose_name="id_torta")
     torta = models.CharField(max_length=50, verbose_name="nombre torta")
     tipotorta = models.CharField(max_length=50, verbose_name="tipo torta")
-    tamaño = models.CharField(max_length=50, verbose_name="tamaño torta")
+    tamanio = models.CharField(max_length=50, verbose_name="tamaño torta")
     stock = models.IntegerField( verbose_name="cantidad tortas")
-    foto = models.ImageField(verbose_name="foto tortas",null=True, upload_to="core")
+    foto = models.ImageField(verbose_name="foto tortas", upload_to="core", default="static/core/img/sin_imagen.jpg")
 
     def __str__(self):
         return f'{self.idtorta}'
