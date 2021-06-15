@@ -11,8 +11,24 @@
     <form method="post" action="" id="formularioo">
         {% csrf_token %}
         <div class="form-group"> 
-        {{form.as_table}}
-        </div>
+            <!---{{form.as_table}}-->
+        
+        <label for="id_torta">Nombre torta:</label>
+        <input type="text" name="torta" maxlength="50" required="" id="id_torta">
+        
+        <label for="id_tipotorta">Tipo torta:</label>   
+        <input type="text" name="tipotorta" maxlength="50" required="" id="id_tipotorta">
+        
+        <label for="id_tamaño">Tamaño torta:</label>       
+        <input type="text" name="tamaño" maxlength="50" required="" id="id_tamaño">
+        
+        <label for="id_stock">Cantidad tortas:</label>
+        <input type="number" name="stock" required="" id="id_stock">
+        
+        <label for="id_foto">Foto tortas:</label>
+        <input type="file" name="foto" accept="image/*" required="" id="id_foto">
+        
+    </div>
 
         <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
         <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">

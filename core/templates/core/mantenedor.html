@@ -6,16 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>mantenedor</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        
+        body{
+        background-image: url("https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg");
+        background-color: #F2EAD0;
+        background-blend-mode: soft-light;
+        background-attachment: fixed; 
+        margin: 5%;
+        }
+        #navegador{
+        background-color: #EDD8BF
+        }
+        
+        @media screen and (max-width: 600px) {
+        table{
+        width:100%;
+        margin-top: 15%;
+        }
+        thead {
+        display: none;
+        }
+        tr:nth-of-type(2n) {
+        background-color: inherit;
+        }
+        tr td:first-child {
+        font-weight:bold;
+        font-size: 20px;
+        }
+        tbody td {
+        display: block;
+        text-align:center;
+        }
+        tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+        }
+        }
+        .Modificador{
+            background: skyblue;
+        }
+        .ELIMINADOR{
+            background: rgb(230, 61, 61);
+        }
+        #tabla_new{
+        background: darkslategray ;
+        color: white;
+        }
+        .definidores{
+        background-color: rgb(83, 59, 42);
+        }
+        .agregador_tortas{
+        background-color: greenyellow;
+        height: 100px;
+        border-radius: 10px;
+        border: groove;
+        }
+        .titulo{
+        text-align: center;
+        font-family: 'lobster', cursive;
+        }
+        </style>
 </head>
 <body>
+    <nav class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navegador">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+            </svg>
+            <a class="navbar-brand" id="TITULO" >Cakes el delicioso</a>          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'Start'%}" id="boton_ini">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="productos.html" id="productos">Productos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active" id="link_iniciar_sesion">
+                        <a class="nav-link" href="{% url 'login' %}" id="letra_inicio">Iniciar Sesion <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active" id="link_registro">
+                        <a class="nav-link" href="{% url 'registros' %}" id="letra_registro">Registro <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" id="buscar">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="boton_busc">Buscar</button>
+              </form>
+            </div>
+        </nav>
+    </nav>
     <div class="conetendor">      
-            <table >
-                <tr> <td>Torta</td>  <td>Tamaño</td> <td>Tipo Torta</td> <td>Stock</td> <td>foto</td> </tr>
+            <table class="table table-bordered" id="tabla_new">
+                <thead>
+                  <tr class="definidores">
+                    <th scope="col">Torta</th>
+                    <th scope="col">Tamaño</th>
+                    <th scope="col">Tipo Torta</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">fotos</th>
+                    <th scope="col">Modificador de datos</th>
+                    <th scope="col">Eliminador de datos</th>
+                  </tr>
+                </thead>
                 {% for torta in tortas %}
-                <tr> <td>{{torta.torta}} </td> <td>{{torta.tamaño}} </td> <td>{{torta.tipotorta}} </td> <td>{{torta.stock}} </td> <td> <img src="{{torta.foto.url}}" alt="" style="width: 200px;"></td> <td><a href="{% url 'mantenedormod' torta.idtorta %}">MODIFICAR</a> </td> <td> <a href="{% url 'deletorta' torta.idtorta %}">ELIMINAR</a></td></tr> 
-                      
+                <tbody>
+                  <tr>
+                    <th scope="row">{{torta.torta}}</th>
+                    <td>{{torta.tamaño}}</td>
+                    <td>{{torta.tipotorta}}</td>
+                    <td>{{torta.stock}} </td>
+                    <td> <img src="{{torta.foto.url}}" alt="" style="width: 200px;"></td>
+                    <td class="Modificador"><a href="{% url 'mantenedormod' torta.idtorta %}">MODIFICAR</a> </td>
+                    <td class="ELIMINADOR"><a href="{% url 'deletorta' torta.idtorta %}">ELIMINAR</a></td>
+                  </tr>
+                </tbody>
                 {% endfor %}
-            </table>
+              </table>
+              <a class="agregador_tortas" href="{% url 'agregartorta'%}">AGREGAR TORTA</a>
             <a href="{% url 'agregartorta'%}">AGREGAR TORTA</a>
     </div>
     
@@ -26,5 +141,3 @@
 </body>
 
 </html>
-
-
