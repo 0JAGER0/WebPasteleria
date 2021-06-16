@@ -6,6 +6,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpRequest
 from django.contrib import messages
 from .forms import UserRegisterForm
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.forms import UsernameField
 
 # Create your views here.
 
@@ -31,6 +33,18 @@ def contacto(request):
 
 def formularioContac(request):
     return render(request,'core/formularioContac.html')
+
+
+def loginadmin(request):
+
+    if request.method == 'POST':
+        form = UsernameField(request.POST)
+        username = form.cleaned_data['username']
+        if username == 'admin':
+            return redirect('mantenedor')
+
+
+    return render(request,'core/loginadmin.html')
 
 def registros(request):
     if request.method == 'POST':
