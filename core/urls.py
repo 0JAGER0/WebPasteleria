@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import Start, deletorta,agregarTorta, mantenedor, nosotros , productos , contacto , registros , formularioContac , operaBlanca , merengueframbuesa, login , hojaRasca ,HojaldreManjar , Cassatta , BiscochoFrambuesa,listadocompra,mantenedormod,deletortaLista
+from .views import Start, deletorta,agregarTorta, mantenedor, nosotros , productos , contacto , registros , formularioContac , operaBlanca , merengueframbuesa, login , hojaRasca ,HojaldreManjar , Cassatta , BiscochoFrambuesa,listadocompra,mantenedormod,deletortaLista,loginadmin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth.views import LoginView,LogoutView
@@ -24,7 +24,8 @@ urlpatterns = [
     path('mantenedormod/<pk>',mantenedormod,name="mantenedormod"),
     path('agregartorta/',agregarTorta,name="agregartorta"),
     path('deletorta/<pk>/',deletorta,name="deletorta"),
-    path('deletortaLista/<pk>',deletortaLista,name="deletortaLista")
+    path('deletortaLista/<pk>',deletortaLista,name="deletortaLista"),
+    path('loginadmin/',LoginView.as_view(template_name='core/loginadmin.html'),name="loginadmin")
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
 

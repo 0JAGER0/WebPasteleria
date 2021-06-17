@@ -6,6 +6,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpRequest
 from django.contrib import messages
 from .forms import UserRegisterForm
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.forms import UsernameField
 
 # Create your views here.
 
@@ -31,6 +33,18 @@ def contacto(request):
 
 def formularioContac(request):
     return render(request,'core/formularioContac.html')
+
+
+def loginadmin(request):
+
+    if request.method == 'POST':
+        form = UsernameField(request.POST)
+        username = form.cleaned_data['username']
+        if username == 'admin':
+            return redirect('mantenedor')
+
+
+    return render(request,'core/loginadmin.html')
 
 def registros(request):
     if request.method == 'POST':
@@ -83,7 +97,9 @@ def mantenedormod(request,pk):
     }
 
     if request.method == 'POST':
-        formularioeditado = listadoTortasForm(data=request.POST,instance=torta)
+
+        formularioeditado = listadoTortasForm(data=request.POST,instance=torta,)
+
 
         if formularioeditado.is_valid:
             formularioeditado.save()
@@ -132,10 +148,15 @@ def deletortaLista(request,pk):
     }
 
     torta = listadoTortas.objects.get(idtorta = pk)
+    
+    numero = 0+1
 
-    torta.delete()
+    if torta.delete():
 
-    datos['mensaje']='Gracias por haber comprado nuestra tortas, puede pagar y retirarla en nuestra tienda su numero de boleta es {}'
+        datos['mensaje']='Gracias por haber comprado nuestra tortas, puede pagar y retirarla en nuestra tienda su numero de boleta es {}'
+
+    else:
+        datos['mensaje']='Hubo algun error'
 
     return redirect(to='listadocompra')
 
