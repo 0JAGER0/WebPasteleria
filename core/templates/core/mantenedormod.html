@@ -15,7 +15,7 @@
         background-color: #F2EAD0;
         background-blend-mode: soft-light;
         background-attachment: fixed; 
-        margin: 5%;
+        margin: 4%;
         }
         #navegador{
         background-color: #EDD8BF
@@ -69,8 +69,14 @@
         text-align: center;
         font-family: 'lobster', cursive;
         }
-        </style>
+        input{
+        border-radius: 10px;
+        }
 
+        h2{
+        margin-top: 50px;
+        }
+        </style>
 
 </head>
 <body>
@@ -117,31 +123,38 @@
     <div class="row">
         <form method="post" enctype="multipart/form-data" action="" id="formularioo">
             {% csrf_token %}
-            <div class="form-group">
+
+            <h2>Modificar Datos</h2>
+
+            <div class="form-group" style=" background-image: url(https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg); background-blend-mode: soft-light; background-color: #e9d48e; color: black; border-radius: 20px; border: groove;">
                 <!--{{form.as_table}}-->
-                
-                <label for="id_torta">Nombre torta:</label>
-                <input type="text" name="torta" value="operablanca" maxlength="50" required="" id="id_torta">
 
-                <label for="id_tipotorta">Tipo torta:</label>
-                <input type="text" name="tipotorta" value="con azucar" maxlength="50" required="" id="id_tipotorta">
-
-                <label for="id_tamanio">Tamaño torta:</label>
-                <input type="text" name="tamanio" value="20 a 40 personas" maxlength="50" required="" id="id_tamanio">
-
-                <label for="id_stock">Cantidad tortas:</label>
-                <input type="number" name="stock" value="10" required="" id="id_stock">
-
-                <label for="id_foto">Foto tortas:</label>
-                Actualmente: 
-                <a href="/media/core/torta.jpg">core/torta.jpg</a>
+            <table style="overflow-x:auto; margin-right: 100px;">
+            <tr>
+                <td><label for="id_torta"><b>Nombre torta:</b></label></td>
+                <td><input type="text" name="torta" maxlength="50" required="" id="id_torta"></td>
+            </tr>
+            <tr>
+                <td><label for="id_tipotorta"><b>Tipo torta:</b></label></td>
+                <td><input type="text" name="tipotorta"  maxlength="50" required="" id="id_tipotorta"></td>
+            </tr>
+            <tr>
+                <td><label for="id_tamanio"><b>Tamaño torta:</b></label></td>
+                <td><input type="text" name="tamanio"  maxlength="50" required="" id="id_tamanio"></td>
+            </tr>
+            <tr>
+                <td><label for="id_stock"><b>Cantidad tortas:</b></label></td>
+                <td><input type="number" name="stock" required="" id="id_stock"></td>
+            </tr>
+            <tr>
+                <td><label for="id_foto"><b>Foto tortas:</b></label> Actualmente:<a href="/media/core/torta.jpg"> core/torta.jpg</a></td> 
                 <br>
-                <input type="file" name="foto" accept="image/*" id="id_foto">
-
-            </div>
+                <td><input type="file" name="foto" accept="image/*" id="id_foto"></td>
+            </tr>
+            </table>
+        </div>
         <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
         <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
-
         <div class="alert alert-danger" id="error" role="alert"></div>
 
         <div class="alert {% if mensaje == 'Datos actualizados' %}alert-success{% else %}alert-danger{% endif %}" 

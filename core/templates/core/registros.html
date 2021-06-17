@@ -67,21 +67,8 @@
     <br>
     <form class="form" method="post">
         {% csrf_token %}
-        <!--{{ form.as_p }}-->
-    
-    <div class="regis_r" style="text-align: left;">
-        <label for="id_username">Nombre de usuario:</label>
-        <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username">
+      {{ form.as_p }}
 
-        <label for="id_email">Email:</label>
-        <input type="email" name="email" required="" id="id_email">
-
-        <label for="id_password1">Contraseña:</label>
-        <input type="password" name="password1" required="" id="id_password1">
-
-        <label for="id_password2">Confirma la contraseña:</label>
-        <input type="password" name="password2" required="" id="id_password2">
-    </div>
         <button type="submit" id="submit">
             registrarse
         </button>
