@@ -68,12 +68,31 @@
 <hr>
 <form class="form" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    <img class="avatar" src="{% static 'core/img/icono_torta.jpg' %}"  alt="icono-pasteleria">
+    
+    
+    <h4>  Iniciar sesion   </h4>
 
-    <button type="submit" id="submit">
+    <div>
+    <label for="id_username">Nombre de usuario: </label> 
+    <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+    </div>
+
+    <div>
+    <label for="id_password">Contraseña: </label>
+    <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+    </div>
+
+
+    <div>
+    <button type="submit" id="submit" class="btn btn-primary btn-lg">
         Login
     </button>
-
+    </div>
+    <hr>
+    <a href="#">¿Perdio su Contraseña?</a>
+    <br>
+    <a href="{% url 'registros' %}">¿No tiene una cuenta?</a>
 </form> 
 
 
