@@ -38,9 +38,10 @@ def formularioContac(request):
 def loginadmin(request):
 
     if request.method == 'POST':
-        form = UsernameField(request.POST)
-        username = form.cleaned_data['username']
-        if username == 'admin':
+        
+        form = LoginView(request.POST) 
+        if UsernameField == 'admin':
+
             return redirect('mantenedor')
 
 
@@ -98,7 +99,7 @@ def mantenedormod(request,pk):
 
     if request.method == 'POST':
 
-        formularioeditado = listadoTortasForm(data=request.POST,instance=torta,)
+        formularioeditado = listadoTortasForm(request.POST,request.FILES,instance=torta)
 
 
         if formularioeditado.is_valid:
