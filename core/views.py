@@ -9,6 +9,7 @@ from .forms import UserRegisterForm
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.forms import UsernameField
 
+
 # Create your views here.
 
 
@@ -79,6 +80,7 @@ def HojaldreManjar(request):
 
 def Cassatta(request):
     return render(request,'core/Cassatta.html')
+
 
 def mantenedor(request):
     tortas = listadoTortas.objects.all()
