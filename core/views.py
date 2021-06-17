@@ -6,6 +6,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpRequest
 from django.contrib import messages
 from .forms import UserRegisterForm
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.forms import UsernameField
 
 # Create your views here.
 
@@ -31,6 +33,19 @@ def contacto(request):
 
 def formularioContac(request):
     return render(request,'core/formularioContac.html')
+
+
+def loginadmin(request):
+
+    if request.method == 'POST':
+        
+        form = LoginView(request.POST) 
+        if UsernameField == 'admin':
+
+            return redirect('mantenedor')
+
+
+    return render(request,'core/loginadmin.html')
 
 def registros(request):
     if request.method == 'POST':
@@ -84,7 +99,7 @@ def mantenedormod(request,pk):
 
     if request.method == 'POST':
 
-        formularioeditado = listadoTortasForm(data=request.POST,instance=torta,)
+        formularioeditado = listadoTortasForm(request.POST,request.FILES,instance=torta)
 
 
         if formularioeditado.is_valid:

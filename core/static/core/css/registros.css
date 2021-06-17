@@ -8,10 +8,15 @@ body{
     background-image: url("https://cdn.kiwilimon.com/articuloimagen/16907/16908.jpg");
     background-size: cover ;
     font-family: sans-serif;
-    height: 100vh; 
+    height: 100px; 
     max-width: 100%;
-
+    background-attachment: fixed;
 }
+
+#formularioXD{
+    margin: 10%;
+    }
+    
 
 .img{
     max-width: 150%;
@@ -175,3 +180,4 @@ form .error{
   }
 
 @media screen and (max-width:500px) {     .grid-container {         display: flex;         flex-direction: column;     } }
+
