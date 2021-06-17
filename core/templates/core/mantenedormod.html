@@ -123,11 +123,20 @@
     <div class="row">
         <form method="post" enctype="multipart/form-data" action="" id="formularioo">
             {% csrf_token %}
-
-            <h2>Modificar Datos</h2>
-
-            <div class="form-group" style=" background-image: url(https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg); background-blend-mode: soft-light; background-color: #e9d48e; color: black; border-radius: 20px; border: groove;">
+            <div class="form-group">
                 <!--{{form.as_table}}-->
+                
+                <label for="id_torta">Nombre torta:</label>
+                <input type="text" name="torta" value="" maxlength="50" required="" id="id_torta">
+
+                <label for="id_tipotorta">Tipo torta:</label>
+                <input type="text" name="tipotorta" value="" maxlength="50" required="" id="id_tipotorta">
+
+                <label for="id_tamanio">Tamaño torta:</label>
+                <input type="text" name="tamanio" value="" maxlength="50" required="" id="id_tamanio">
+
+                <label for="id_stock">Cantidad tortas:</label>
+                <input type="number" name="stock" value="" required="" id="id_stock">
 
             <table style="overflow-x:auto; margin-right: 100px;">
             <tr>
