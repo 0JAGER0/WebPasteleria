@@ -39,4 +39,9 @@ class listadoTortas(models.Model):
         return f'{self.idtorta}'
 
 
+class ventas(models.Model):
+    idboleta = models.AutoField(primary_key=True,verbose_name="id_ventas")
+    nombreventa = models.CharField(max_length=50, verbose_name="venta")
 
+    def __str__(self):
+        return f'{self.idboleta}'
