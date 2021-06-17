@@ -115,30 +115,30 @@
     </header>
 
     <div class="row">
-        <form method="post" action="" id="formularioo">
-        {% csrf_token %}
-        <div class="form-group">
-            <!--{{form.as_table}}-->
-            
-            <label for="id_torta">Nombre torta:</label>
-            <input type="text" name="torta" value="operablanca" maxlength="50" required="" id="id_torta">
+        <form method="post" enctype="multipart/form-data" action="" id="formularioo">
+            {% csrf_token %}
+            <div class="form-group">
+                <!--{{form.as_table}}-->
+                
+                <label for="id_torta">Nombre torta:</label>
+                <input type="text" name="torta" value="operablanca" maxlength="50" required="" id="id_torta">
 
-            <label for="id_tipotorta">Tipo torta:</label>
-            <input type="text" name="tipotorta" value="con azucar" maxlength="50" required="" id="id_tipotorta">
+                <label for="id_tipotorta">Tipo torta:</label>
+                <input type="text" name="tipotorta" value="con azucar" maxlength="50" required="" id="id_tipotorta">
 
-            <label for="id_tamanio">Tamaño torta:</label>
-            <input type="text" name="tamanio" value="20 a 40 personas" maxlength="50" required="" id="id_tamanio">
+                <label for="id_tamanio">Tamaño torta:</label>
+                <input type="text" name="tamanio" value="20 a 40 personas" maxlength="50" required="" id="id_tamanio">
 
-            <label for="id_stock">Cantidad tortas:</label>
-            <input type="number" name="stock" value="10" required="" id="id_stock">
+                <label for="id_stock">Cantidad tortas:</label>
+                <input type="number" name="stock" value="10" required="" id="id_stock">
 
-            <label for="id_foto">Foto tortas:</label>
-            Actualmente: 
-            <a href="/media/core/torta.jpg">core/torta.jpg</a>
-            <br>
-            <input type="file" name="foto" accept="image/*" id="id_foto">
+                <label for="id_foto">Foto tortas:</label>
+                Actualmente: 
+                <a href="/media/core/torta.jpg">core/torta.jpg</a>
+                <br>
+                <input type="file" name="foto" accept="image/*" id="id_foto">
 
-        </div>
+            </div>
         <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
         <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
 
