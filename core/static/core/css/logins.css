@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 
 body {
@@ -15,9 +16,9 @@ body {
 .img{
     max-width: 100%;
 }
-.login-box {
-    width: 320px;
-    height: 420px;
+.form {
+    width: 450px;
+    height: 500px;
     background: rgba(255, 0, 0, 0.2);
     color: #fff;
     top: 50%;
@@ -25,11 +26,11 @@ body {
     position: absolute;
     transform: translate(-50%, -50% );
     border-radius: 60px 60px 60px 60px;
-    padding: 70px 30px;
+    padding: 60px 40px;
     font-family: 'Lobster', cursive;
 }
 
-.login-box .avatar{
+.form .avatar{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -39,69 +40,77 @@ body {
 
 }
 
-.login-box h1{
+.form h4{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
-
+    font-family: 'Lobster', cursive;
 }
 
 
 
-.login-box label{
+.form label{
     margin: 0;
     padding: 0;
     font-weight: bold;
     display: block;
-
+    font-family: 'Lobster', cursive;
 }
 
-.login-box input{
+.form input{
+    margin-top: 20px;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
+.form input[type="text"],
+.form input[type="password"] {
     border: none;
-    border-bottom: 1px solid #444;
-    background: transparent;
-    outline: none;
+    border-bottom: 1px solid rgb(211, 27, 27);
     height: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
-
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
 }
 
-.login-box input[type="submit"] {
+.form input[type="submit"] {
     border: none;
     outline: none;
     height: 40px;
     background: rgb(196, 21, 21);
-    color: aqua;
+    color: rgb(39, 14, 151);
     font-size: 18px;
     border-radius: 20px;
+    
 }
 
-.login-box input[type="submit"]:hover {
+.form input[type="submit"]:hover {
     transform: scale(0.95);
 }
 
-.login-box a {
+.form a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
     color: darkgray;
+    margin: 0;
+    padding-left: 140px;
 }
 
-.login-box a:hover {
+.form a:hover {
     color:white;
 }
 
 
-
-
+.form button{
+    margin-left: 100px;
+    padding-left : 70px;
+    padding-right : 70px;
+    color:rgb(44, 148, 173);
+    background: rgb(255, 255, 255);
+}
 .footer {
 
     padding: 1.5em;
