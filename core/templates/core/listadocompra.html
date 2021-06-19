@@ -63,18 +63,18 @@
 
     <div class="container">      
         <table border="5">
-            <tr> <td>Torta</td>  <td>Tamaño</td> <td>Tipo Torta</td> <td>Stock</td> <td>Foto</td> </tr>
+            <tr> <td>IDtorta</td> <td>Torta</td>  <td>Tamaño</td> <td>Tipo Torta</td> <td>Stock</td> <td>Foto</td> </tr>
             {% for torta in tortas %}
-            <tr> <td>{{torta.torta}} </td> <td>{{torta.tamanio}} </td> <td>{{torta.tipotorta}} </td> <td>{{torta.stock}} </td> <td> <img src="{{torta.foto.url}}" alt="" style="width: 200px;"></td><td class="ELIMINADOR"><a href="{% url 'deletortaLista' torta.idtorta %}">COMPRAR</a></td> </tr> 
+            <tr> <td>{{torta.idtorta}} </td> <td>{{torta.torta}} </td> <td>{{torta.tamanio}} </td> <td>{{torta.tipotorta}} </td> <td>{{torta.stock}} </td> <td> <img src="{{torta.foto.url}}" alt="" style="width: 200px;"></td><td class="ELIMINADOR"><a href="{% url 'deletortaLista' torta.idtorta %}">COMPRAR</a></td> </tr> 
 
-            {% endfor %}
+            
   
         </table>
 
         <div class="alert alert-success" role="alert">
-            {{mensaje}}
+            <h3>Gracias por compra su numero de boleta es {{torta.idtorta}} </h3>
         </div>
-
+            {% endfor %}
     </div>  
     
 

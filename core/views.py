@@ -146,20 +146,11 @@ def deletorta(request,pk):
 
 def deletortaLista(request,pk):
 
-    datos = {
-        'form':listadoTortasForm()
-    }
+    
 
     torta = listadoTortas.objects.get(idtorta = pk)
     
-    numero = 0+1
-
-    if torta.delete():
-
-        datos['mensaje']='Gracias por haber comprado nuestra tortas, puede pagar y retirarla en nuestra tienda su numero de boleta es {}'
-
-    else:
-        datos['mensaje']='Hubo algun error'
+    torta.delete()
 
     return redirect(to='listadocompra')
 
