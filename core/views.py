@@ -144,16 +144,6 @@ def deletorta(request,pk):
 
     return redirect(to='mantenedor')
 
-def deletortaLista(request,pk):
-
-    
-
-    torta = listadoTortas.objects.get(idtorta = pk)
-    
-    torta.delete()
-
-    return redirect(to='listadocompra')
-
 
 def listadocompra(request):
 
@@ -163,4 +153,25 @@ def listadocompra(request):
         'tortas':tortas
     }
 
+    if request.method == 'POST':
+        print(request.POST)
+        torta = listadoTortas.objects.get(idtorta = request.POST['idtorta'])
+
+        if torta.stock > 0:
+            torta.stock -= 1
+            torta.save(update_fields=['stock'])
+            datos['mensaje'] = 'compra realizada exitoooo'
+        else:
+            datos['mensaje'] = 'error por el stock'
+
     return render(request,'core/listadocompra.html',datos)
+
+
+def deletortaLista(request,pk):
+
+    
+    torta = listadoTortas.objects.get(idtorta = pk)
+    
+    torta.delete()
+
+    return redirect(to='listadocompra')
