@@ -11,7 +11,7 @@
         background-color: #EDD8BF
         }
         
-        @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
         table{
         width:100%;
         margin-top: 15%;
@@ -63,7 +63,7 @@
         
 #TITULO{
     font-family: 'Lobster', cursive;
-    font-size: 40px;
+    font-size: 28px;
     max-width: 100%;
     
 }
@@ -94,8 +94,7 @@
     font-family: 'Lobster', cursive;
 
 }    
-/*diego, te arregle el que el registro e iniciar sesion quedaran a la derecha*/ 
-/*y centre un poco el titulo que pusiste , el color cambialo si sientes que esta poco visible pero era una prueba nada mas*/
+
 #TITULOH1{
     font-family: 'Great Vibes', cursive;
     text-align: center;
@@ -108,4 +107,22 @@
 #logo{
     margin-right: 10px;
     max-width: 100%;
+}
+
+label{
+font-size: 20px;
+}
+
+h1{
+    font-family: 'lobster', cursive;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+#error{
+ width: 300px;
+ margin-top: 40px;
+}
+#success{
+    width: 300px; 
 }

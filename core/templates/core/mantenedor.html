@@ -57,6 +57,7 @@
         #tabla_new{
         background: darkslategray ;
         color: white;
+        margin-top: 50px;
         }
         .definidores{
         background-color: rgb(83, 59, 42);
@@ -67,7 +68,7 @@
         border-radius: 10px;
         border: groove;
         font-size: 19px;
-        margin-top: 60px;
+        margin-top: 90px;
         }
         
 
@@ -113,10 +114,10 @@
     <div class="conetendor">     
             <table class="table table-bordered" id="tabla_new">
                 <thead>
-                <tr>
-                    <th><a class="agregador_tortas" href="{% url 'agregartorta'%}"> AGREGAR TORTA</a>
-                </tr>
-                  <tr class="definidores">
+                    
+                <a class="agregador_tortas" href="{% url 'agregartorta'%}"> AGREGAR TORTA</a>
+                
+                <tr class="definidores">
                     <th scope="col">Torta</th>
                     <th scope="col">Tamaño</th>
                     <th scope="col">Tipo Torta</th>

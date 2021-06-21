@@ -47,41 +47,56 @@
                 </div>
             </nav>
             
-        </nav>  
+        </nav>
+
     </header>
     <br>
-
+     
 
     <form method="post" enctype="multipart/form-data" action="" id="formularioo">
         {% csrf_token %}
-        <div class="form-group"> 
-            <!---{{form.as_table}}-->
-        <table>
-        <label for="id_torta">Nombre torta:</label>
-        <input type="text" name="torta" maxlength="50" required="" id="id_torta">
-        
-        <label for="id_tipotorta">Tipo torta:</label>   
-        <input type="text" name="tipotorta" maxlength="50" required="" id="id_tipotorta">
-        
-        <label for="id_tamanio">Tamaño torta:</label>       
-        <input type="text" name="tamanio" maxlength="50" required="" id="id_tamanio">
-        
-        <label for="id_stock">Cantidad tortas:</label>
-        <input type="number" name="stock" required="" id="id_stock">
-        
-        <label for="id_foto">Foto tortas:</label>
-        <input type="file" name="foto" accept="image/*" required="" id="id_foto">
-        
-        </div>
-    </table>
+        <!---{{form.as_table}}-->
     
+<table class="table-responsive" style="overflow-x:auto; margin-right: 100px; margin-top: 50px;">
+    <div class="form-group"> 
+     
+    <tr>
+    <td>
+    <h1>
+        Añadidor tortas
+    </h1>
+    </td>
+    </tr>
+    <tr>
+        <td><label for="id_torta"><b>Nombre torta:</b></label></td>
+        <td><input class="" type="text" name="torta" maxlength="50" required="" id="id_torta"></td>
+    </tr>
+    <tr>
+        <td><label for="id_tipotorta"><b>Tipo torta:</b></label></td>
+        <td><input type="text" name="tipotorta" maxlength="50" required="" id="id_tipotorta"></td>
+    </tr>
+        <td><label for="id_tamanio"><b>Tamaño torta:</b></label></td>      
+        <td><input type="text" name="tamanio" maxlength="50" required="" id="id_tamanio"></td>
+    <tr>
+        <td><label for="id_stock"><b>Cantidad tortas:</b></label></td>
+        <td><input type="number" name="stock" required="" id="id_stock"></td>
+    </tr>
+    <tr>  
+        <td><label for="id_foto"><b>Foto tortas:</b></label></td>
+        <td><input type="file" name="foto" accept="image/*" required="" id="id_foto"></td>
+    </tr>  
+        </div>
+    
+</table>
+
         <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
         <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
-        <div class="alert alert-danger" id="error" role="alert"></div>
+            
+    </div>
 
     </form>
-
-        <div class="alert alert-success" role="alert">
+    <div class="alert alert-danger" id="error" role="alert"></div>
+        <div class="alert alert-success" role="alert" id="success">
             {{mensaje}}
         </div>
 
