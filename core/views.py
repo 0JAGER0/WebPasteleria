@@ -107,7 +107,7 @@ def mantenedormod(request,pk):
         if formularioeditado.is_valid:
             formularioeditado.save()
 
-            datos['mensaje']='Datos actualizados'
+            datos['mensaje']='Datos actualizados, volver a mantenedor para ver la actualizacion'
         else:
             datos['mensaje']='Hubo algun error intentelo de nuevo '
 

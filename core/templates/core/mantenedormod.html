@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title>mod</title>
+    <title>Modificador de Datos</title>
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -77,6 +77,69 @@
         h2{
         margin-top: 50px;
         }
+
+        #TITULO{
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+        max-width: 100%;
+        }
+        
+        #letra_registro{
+        color: white;
+        font-family: 'Lobster', cursive;
+        }
+        
+       #letra_inicio{
+        color:black;
+        font-family: 'Lobster', cursive;  
+    }
+    
+    table{
+        margin-top: 200pxs;
+    }
+
+    .Tabla1{
+        background-image: url('https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg'); 
+        background-blend-mode: soft-light; 
+        background-color: #e9d48e; 
+        color: black; 
+        border-radius: 20px; 
+        border: groove; 
+        margin-top: 1000px;
+    
+    }
+     
+    #estado_resp{
+    margin-top: 40px;
+    width: 400px;
+    border-collapse: collapse;
+    max-width: 100%;
+    background-color: #04AA6D;
+    margin: 4%;
+    border-radius: 20px;
+    margin-left: 65px;
+    }
+
+    #title_table{
+        text-align: center;
+    }
+
+    #message{
+        text-align: center;
+    }
+
+    h1{
+        font-family: 'lobster', cursive;
+        margin-top: 90px;
+    }
+
+    td{
+    font-size: 19px;
+    }
+    
+    #boton_volver{
+    color: white;
+    }
         </style>
 
 </head>
@@ -124,44 +187,62 @@
     <div class="row">
         <form method="post" enctype="multipart/form-data" action="" id="formularioo">
             {% csrf_token %}
-           
-        <div class="form-group" style=" background-image: url(https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg); background-blend-mode: soft-light; background-color: #e9d48e; color: black; border-radius: 20px; border: groove;">
-            <table style="overflow-x:auto; margin-right: 100px;">
+        
+        <h1>
+        Modificador de tortas
+        </h1>
+        
+        <div class="form-group"  class="Tabla1">
+            <table style="overflow-x:auto; margin-right: 100px; margin-top: 20px;">
             <tr>
                 <td><label for="id_torta"><b>Nombre torta:</b></label></td>
-                <td>{{form.torta}}</td>
+                <td id="nomb_torta">{{form.torta}}</td>
             </tr>
             <tr>
                 <td><label for="id_tipotorta"><b>Tipo torta:</b></label></td>
-                <td>{{form.tipotorta}}</td>
+                <td id="nomb_tipotorta">{{form.tipotorta}}</td>
             </tr>
             <tr>
                 <td><label for="id_tamanio"><b>Tamaño torta:</b></label></td>
-                <td>{{form.tamanio}}</td>
+                <td id="nomb_tamanio">{{form.tamanio}}</td>
             </tr>
             <tr>
                 <td><label for="id_stock"><b>Cantidad tortas:</b></label></td>
-                <td>{{form.stock}}</td>
+                <td id="nomb_stock">{{form.stock}}</td>
             </tr>
             <tr>
-                <td><label for="id_foto"><b>Foto tortas:</b></label> Actualmente:<a href="/media/core/torta.jpg"> core/torta.jpg</a></td> 
+                <td><label for="id_foto"><b>Foto tortas:</b></label> </td> 
                 <br>
-                <td><input type="file" name="foto" accept="image/*" id="id_foto"></td>
+                <td>{{form.foto}} </td>
             </tr>
             </table>
         </div>
 
-        <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
-        <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
-        <div class="alert alert-danger" id="error" role="alert"></div>
-
-        <div class="alert {% if mensaje == 'Datos actualizados' %}alert-success{% else %}alert-danger{% endif %}" 
-        id="error" role="alert">{{mensaje}}</div>
-
-        </form>
+        <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
+        <button class="btn btn-danger"> <a id="boton_volver" href="{% url 'mantenedor'%}">Cancerlar y volver</a></button>
+        
+    <table id="estado_resp" >
+    <tr id="title_table">
+       <td>
+            <b>Estado</b>
+       </td>
+    </tr>
+  
+    <tr>
+   
+    <td id="message">
+        <div class="alert {% if mensaje == 'Datos actualizados' %}alert-success{% else %}alert-danger{% endif %}" id="error" role="alert">
+            {{mensaje}} 
+        </div>
+    </td>
+    </tr>
+   
+    </table>
+    
+</form>
 
     </div>
-    
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

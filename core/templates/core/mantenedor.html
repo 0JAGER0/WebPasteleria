@@ -66,11 +66,11 @@
         height: 100px;
         border-radius: 10px;
         border: groove;
+        font-size: 19px;
+        margin-top: 60px;
         }
-        .titulo{
-        text-align: center;
-        font-family: 'lobster', cursive;
-        }
+        
+
         </style>
 </head>
 <body>
@@ -108,13 +108,14 @@
                 </form>
             </div>
         </nav>
-        
-    </nav>   
-    <hr>
-    <div class="conetendor">    
-        <a class="agregador_tortas" href="{% url 'agregartorta'%}">AGREGAR TORTA</a>  
+    </nav>
+
+    <div class="conetendor">     
             <table class="table table-bordered" id="tabla_new">
                 <thead>
+                <tr>
+                    <th><a class="agregador_tortas" href="{% url 'agregartorta'%}"> AGREGAR TORTA</a>
+                </tr>
                   <tr class="definidores">
                     <th scope="col">Torta</th>
                     <th scope="col">Tamaño</th>
@@ -139,7 +140,8 @@
                 </tbody>
                 {% endfor %}
             </table>
-              
+
+      
             
     </div>
     

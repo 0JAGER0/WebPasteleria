@@ -123,7 +123,7 @@ body {
 
 #TITULO{
     font-family: 'Lobster', cursive;
-    font-size: 40px;
+    font-size: 30px;
     max-width: 100%;
     
 }
@@ -150,9 +150,7 @@ body {
 /* LETRA REGISTRO BOTON*/
 #letra_registro{
     color: white;
-    
     font-family: 'Lobster', cursive;
-
 }    
 /*diego, te arregle el que el registro e iniciar sesion quedaran a la derecha*/ 
 /*y centre un poco el titulo que pusiste , el color cambialo si sientes que esta poco visible pero era una prueba nada mas*/
@@ -183,8 +181,8 @@ form{
 
 ul{
     font-family: 'lobster', cursive;
-    margin-left: 40px;
-    font-size: 24px;
+    margin-left: 30px;
+    font-size: 20px;
 }
 
 form .error{
