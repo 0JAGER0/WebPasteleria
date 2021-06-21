@@ -56,7 +56,7 @@
         {% csrf_token %}
         <div class="form-group"> 
             <!---{{form.as_table}}-->
-        
+        <table>
         <label for="id_torta">Nombre torta:</label>
         <input type="text" name="torta" maxlength="50" required="" id="id_torta">
         
@@ -73,7 +73,8 @@
         <input type="file" name="foto" accept="image/*" required="" id="id_foto">
         
         </div>
-
+    </table>
+    
         <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
         <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
         <div class="alert alert-danger" id="error" role="alert"></div>
