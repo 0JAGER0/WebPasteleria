@@ -40,17 +40,23 @@
                         <a class="nav-link" href="{% url 'nosotros' %}" id="nosotros">Nosotros <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="" id="productos">Productos <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'listadocompra'%}" id="productos">Productos <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'contacto' %}" id="contactos">Contacto <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active" id="link_iniciar_sesion">
-                        <a class="nav-link" href="{% url 'login' %}" id="letra_inicio">Iniciar Sesion <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active" id="link_registro">
-                        <a class="nav-link" href="{% url 'registros' %}" id="letra_registro">Registro <span class="sr-only">(current)</span></a>
-                    </li>
+                    {% if request.user.is_authenticated %}
+                        <li class="nav-item active" id="link_iniciar_sesion">
+                            <a class="nav-link" href="{% url 'logout'%}" id="letra_inicio">logout <span class="sr-only">(current)</span></a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item active" id="link_iniciar_sesion">
+                            <a class="nav-link" href="{% url 'login' %}" id="letra_inicio">Iniciar Sesion <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active" id="link_registro">
+                            <a class="nav-link" href="{% url 'registros' %}" id="letra_registro">Registro <span class="sr-only">(current)</span></a>
+                        </li>
+                    {% endif %}
                 </ul>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -88,7 +94,7 @@
         <a href="mailto:cakeseldelicioso@pasteleria.cl" style="margin-left: 40px; font-size: 25px;"> Click aqui para enviarnos un correo</a>
     </p>
     <p>
-    <a href="formularioContac.html" style="margin-top:0; margin-left: 5em;" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"> Link Formulario</a>
+    <a href="{% url 'formularioContac'%}" style="margin-top:0; margin-left: 5em;" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"> Link Formulario</a>
     </p>
     <p style= "margin-left: 40px; font-size: 25px; font-weight: 100;">Horario de Atención:</p>
     <ul>
