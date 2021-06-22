@@ -57,21 +57,12 @@
         #tabla_new{
         background: darkslategray ;
         color: white;
-        margin-top: 50px;
+        margin-top: 30px;
         }
         .definidores{
         background-color: rgb(83, 59, 42);
         }
-        .agregador_tortas{
-        background-color: greenyellow;
-        height: 100px;
-        border-radius: 10px;
-        border: groove;
-        font-size: 19px;
-        margin-top: 90px;
-        }
         
-
         </style>
 </head>
 <body>
@@ -110,13 +101,11 @@
             </div>
         </nav>
     </nav>
-
-    <div class="conetendor">     
-            <table class="table table-bordered" id="tabla_new">
-                <thead>
-                    
-                <a class="agregador_tortas" href="{% url 'agregartorta'%}"> AGREGAR TORTA</a>
-                
+     
+    <div class="conetendor">  
+            <table class="table table-bordered" id="tabla_new">    
+                   <p style="margin-top: 165px; font-size: 20px;"><b>Ingresar aqui para agregar una nueva torta al listado de productos:</b><a href= "{% url 'agregartorta' %}" >Agregar torta</a></p>                    
+                <thead>               
                 <tr class="definidores">
                     <th scope="col">Torta</th>
                     <th scope="col">Tamaño</th>

@@ -52,21 +52,17 @@
     </header>
     <br>
      
-
+<div class="row">
     <form method="post" enctype="multipart/form-data" action="" id="formularioo">
         {% csrf_token %}
         <!---{{form.as_table}}-->
-    
-<table class="table-responsive" style="overflow-x:auto; margin-right: 100px; margin-top: 50px;">
-    <div class="form-group"> 
-     
-    <tr>
-    <td>
-    <h1>
+    <h1 style="font-size: 50px;">
         Añadidor tortas
     </h1>
-    </td>
-    </tr>
+
+<table class="table-responsive" style="overflow-x:auto; margin-right: 100px; margin-top: 50px;">
+<div class="form-group">   
+    
     <tr>
         <td><label for="id_torta"><b>Nombre torta:</b></label></td>
         <td><input class="" type="text" name="torta" maxlength="50" required="" id="id_torta"></td>
@@ -85,16 +81,15 @@
         <td><label for="id_foto"><b>Foto tortas:</b></label></td>
         <td><input type="file" name="foto" accept="image/*" required="" id="id_foto"></td>
     </tr>  
-        </div>
+</div>
     
 </table>
-
+    <br>
         <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
         <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
-            
-    </div>
+</form>
+</div>
 
-    </form>
     <div class="alert alert-danger" id="error" role="alert"></div>
         <div class="alert alert-success" role="alert" id="success">
             {{mensaje}}
