@@ -20,6 +20,7 @@
             background-color: #F2EAD0;
             background-blend-mode: soft-light;
             background-attachment: fixed; 
+            margin: 5%;
         }
 
         #TITULO{
@@ -78,4 +79,43 @@
             text-align: center;
             margin-top: 100px;
             font-family: 'Lobster', cursive;
+        }
+
+        @media screen and (max-width: 600px) {
+            table{
+            width:100%;
+            margin-top: 15%;
+            }
+            thead {
+            display: none;
+            }
+            tr:nth-of-type(2n) {
+            background-color: inherit;
+            }
+            tr td:first-child {
+            font-weight:bold;
+            font-size: 20px;
+            }
+            tbody td {
+            display: block;
+            text-align:center;
+            }
+            tbody td:before {
+            content: attr(data-th);
+            display: block;
+            text-align:center;
+            }
+            }
+        table{
+            border: black;
+        }
+        td{
+            color: white;
+        }
+
+        .definidores{
+            background-color: #B4581E;
+            }
+        image{
+            border-radius: 15px;
         }
