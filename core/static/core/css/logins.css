@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
 
 
 body {
@@ -46,6 +47,22 @@ body {
     text-align: center;
     font-size: 22px;
     font-family: 'Lobster', cursive;
+}
+
+.form h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+}
+
+.form h3{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 

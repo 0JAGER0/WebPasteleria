@@ -60,16 +60,18 @@
 <hr>
 <hr>
 <hr>
-<h2>ADMIIIIIIIIIIIIIIIN</h2>
-<h3>PARA INGRESAR AL MANTENEDOR, INICIE SESION COMO ADMIN, Y LUEGO VUELVA A AQUI DE NUEVO PARA PODER INGRESAR AL MANTENEDOR </h3>
+
 
 <form class="form" method="post">
     {% csrf_token %}
+    <h2>ADMIN</h2>
     {{ form.as_p }}
 
-    <button type="submit" id="submit">
+    <button type="submit" id="submit" class="btn btn-primary btn-lg" >
         Login
     </button>
+    <hr>
+    <h3> Para ingresar, inicie sesion como admin y vuelva aqui para acceder al mantenedor </h3>
 
 </form> 
 
