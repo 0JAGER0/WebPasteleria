@@ -1,0 +1,143 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        
+.Titulos{
+            
+    font-family: 'Kanit', sans-serif;
+}
+
+
+body {
+    background-image: url("https://cdn.kiwilimon.com/articuloimagen/16907/16908.jpg");
+    background-size: cover ;
+    font-family: sans-serif;
+    height: 100vh; 
+    max-width: 100%;
+}
+
+.img{
+    max-width: 100%;
+}
+.form {
+    width: 450px;
+    height: 250px;
+    background: rgba(255, 0, 0, 0.2);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50% );
+    border-radius: 60px 60px 60px 60px;
+    padding: 60px 40px;
+    font-family: 'Lobster', cursive;
+}
+
+
+.form h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.form h4{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+
+.footer {
+
+    padding: 1.5em;
+    text-align: center;
+    background-color: #60371E;
+    font-family: 'Lobster', cursive;
+    
+}
+/* TITULO BARRA NAVEGACION*/
+#TITULO{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    
+}
+/* link contacto*/
+
+
+#link_iniciar_sesion{
+    font-family: 'lobster', cursive;
+    
+}
+
+#link_registro{
+    font-family: 'lobster', cursive;
+    
+}
+/*LETRA BOTON INICIO SESION*/
+#letra_inicio{
+    color:white;
+    font-family: 'lobster', cursive;
+    
+}
+#start_boton{
+    font-family: 'lobster', cursive;
+}
+#nosotros_boton{
+    font-family: 'lobster', cursive;
+}
+#productos_boton{
+    font-family: 'lobster', cursive;
+}
+#contacto_boton{
+    font-family: 'lobster', cursive;
+}
+#barra_busqueda{
+    font-family: 'lobster', cursive;
+}
+#boton_buscar{
+    font-family: 'lobster', cursive;
+}
+
+.responsive_arreg{
+  width: 100%;
+}
+
+/* LETRA REGISTRO BOTON*/
+#letra_registro{
+    color: white;
+
+}    
+/*Titulo pagina*/ 
+#TITULOH1{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 65px;
+    
+}
+
+/*Titulo pagina*/ 
+#logo{
+    margin-right: 10px;
+}
+
+#letra_registro{
+    margin-right: 350px;
+}
+
+
+/*imagenes al 100%*/
+img{
+    max-width: 100%;
+}
