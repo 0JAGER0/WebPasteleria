@@ -59,29 +59,40 @@
         </nav>    
     </header>
     <h1 class="titlist">Listas de productos</h1>
-
-
-    <div class="container">      
-        <table border="5">
-            <tr> 
-                <td style="display:none;">IDtorta</td> 
-                <td>Torta</td>  
-                <td>Tamaño</td> 
-                <td>Tipo Torta</td> 
-                <td>Stock</td> 
-                <td>Foto</td> 
-            </tr>
-            {% for torta in tortas %}
-            <form action="" method="post">
-                {% csrf_token %}
-            <tr> 
-                <td style="display:none;"><input type="text" value="{{torta.idtorta}}" readonly name="idtorta"></td> 
-                <td>{{torta.torta}} </td> <td>{{torta.tamanio}} </td> <td>{{torta.tipotorta}}</td> 
-                <td>{{torta.stock}} </td> <td> <img src="{{torta.foto.url}}" alt="" style="width: 200px;"></td>
-                <td class="ELIMINADOR"> <button type="submit">COMPRAR</button></td> 
-            </tr> 
+    <div class="conetendor"> 
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                  <tr> 
+                    <th scope="col" style="display:none;" >IDtorta</th>
+                    <th scope="col">Torta</th>
+                    <th scope="col">Tamaño</th>
+                    <th scope="col">Tipo Torta</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Foto</th>
+                    <th scope="col"><B>COMPRA</B></th>
+                  </tr>
+                  {% for torta in tortas %}
+                  <form action="" method="post">
+                </thead>
+                <tbody>
+                    {% csrf_token %}
+                  <tr class="definidores">
+                    <th style="display:none;" scope="row"><input type="text" value="{{torta.idtorta}}" readonly name="idtorta"></th>
+                    <td style="background: #722800;">{{torta.torta}}</td>
+                    <td>{{torta.tamanio}}</td>
+                    <td>{{torta.tipotorta}}</td>
+                    <td>{{torta.stock}} </td>
+                    <td><img src="{{torta.foto.url}}" alt="" style="width: 200px;"></td>
+                    <td class="ELIMINADOR"><button type="submit" class="btn btn-success">COMPRAR</button></td>
+                  </tr>
+                </tbody>
             </form>
             {% endfor %}
+            
+        </table>
+            
+</div>   
+
             
         </table>
             {% if mensaje %}             
@@ -91,7 +102,7 @@
 
             {% endif %}
             
-    </div>  
+    </div>
     
 
 

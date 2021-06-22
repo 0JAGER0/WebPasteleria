@@ -90,10 +90,9 @@
 /* LETRA REGISTRO BOTON*/
 #letra_registro{
     color: white;
-    
     font-family: 'Lobster', cursive;
-
 }    
+
 
 #TITULOH1{
     font-family: 'Great Vibes', cursive;
@@ -114,7 +113,7 @@ font-size: 20px;
 h1{
     font-family: 'lobster', cursive;
     max-width: 100%;
-    margin-top: 85px;
+    margin-top: 60px;
 }
 
 #error{
@@ -123,4 +122,12 @@ h1{
 }
 #success{
     width: 300px; 
+}
+
+p{
+font-size: 20px;
+}
+
+input{
+border-radius: 10px;
 }
