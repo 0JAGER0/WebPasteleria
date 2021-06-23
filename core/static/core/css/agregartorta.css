@@ -4,38 +4,13 @@
         background-image: url("https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg");
         background-color: #F2EAD0;
         background-blend-mode: soft-light;
-        background-attachment: fixed; 
         margin: 5%;
         }
         #navegador{
-        background-color: #EDD8BF
+        background-color: #EDD8BF;
+        width: 100%;
         }
         
-@media screen and (max-width: 600px) {
-        table{
-        width:100%;
-        margin-top: 15%;
-        }
-        thead {
-        display: none;
-        }
-        tr:nth-of-type(2n) {
-        background-color: inherit;
-        }
-        tr td:first-child {
-        font-weight:bold;
-        font-size: 20px;
-        }
-        tbody td {
-        display: block;
-        text-align:center;
-        }
-        tbody td:before {
-        content: attr(data-th);
-        display: block;
-        text-align:center;
-        }
-        }
         .Modificador{
             background: skyblue;
         }
@@ -73,24 +48,20 @@
     height: 500px;
 }
 
-#link_iniciar_sesion{
+#letra_mantenedor{
     font-family: 'Lobster', cursive;    
 }
 
-#link_registro{
-    font-family: 'Lobster', cursive;
-    margin-right: 180px;
-    
-}
 #letra_inicio{
-    color:white;
+    color:rgb(0, 0, 0);
     font-family: 'Lobster', cursive;
     
 }
 /* LETRA REGISTRO BOTON*/
 #letra_registro{
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Lobster', cursive;
+    margin-right: 180px;
 }    
 
 
@@ -130,4 +101,45 @@ font-size: 20px;
 
 input{
 border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    table{
+    width:100%;
+    margin-top: 15%;
+    }
+    thead {
+    display: none;
+    }
+    tr:nth-of-type(2n) {
+    background-color: inherit;
+    }
+    tr td:first-child {
+    font-weight:bold;
+    font-size: 20px;
+    }
+    tbody td {
+    display: block;
+    text-align:center;
+    }
+    tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align:center;
+    }
+}
+
+#table_add{
+    overflow-x:auto; 
+    margin-right: 100px; 
+    margin-top: 50px;
+}
+
+#title_add{
+    font-size: 50px; 
+    padding-left: 50px;
+}
+
+#parraf_instr{
+    padding-right: 20px;
 }

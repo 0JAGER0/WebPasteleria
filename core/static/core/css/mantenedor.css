@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        
+body{
+background-image: url("https://previews.123rf.com/images/arborelza/arborelza1701/arborelza170100003/70672222-patr%C3%B3n-sin-fisuras-quot-la-hora-de-dulce-quot-vector-colorido-delicioso-fondo-con-tortas-pasteles-magda.jpg");
+background-color: #F2EAD0;
+background-blend-mode: soft-light;
+margin: 5%;
+}
+
+#navegador{
+background-color: #EDD8BF;
+width: 100%;
+}
+#TITULO{
+font-family: 'Lobster', cursive;
+font-size: 30px;
+max-width: 100%;
+}
+#letra_inicio{
+color:white;
+font-family: 'Lobster', cursive;   
+}
+#link_registro{
+font-family: 'Lobster', cursive;
+margin-right: 180px;   
+}
+
+@media screen and (max-width: 600px) {
+table{
+width:100%;
+margin-top: 15%;
+}
+thead {
+display: none;
+}
+tr:nth-of-type(2n) {
+background-color: inherit;
+}
+tr td:first-child {
+font-weight:bold;
+font-size: 20px;
+}
+tbody td {
+display: block;
+text-align:center;
+}
+tbody td:before {
+content: attr(data-th);
+display: block;
+text-align:center;
+}
+}
+.Modificador{
+    background: skyblue;
+}
+.ELIMINADOR{
+    background: rgb(230, 61, 61);
+}
+#tabla_new{
+background: darkslategray ;
+color: white;
+margin-top: 2px;
+}
+.definidores{
+background-color: rgb(83, 59, 42);
+}
+#Hiper_agregar{
+margin-top: 155px; 
+font-size: 20px;
+}
+#start_boton{
+font-family: 'lobster', cursive;
+}
