@@ -160,9 +160,9 @@ def listadocompra(request):
         if torta.stock > 0:
             torta.stock -= 1
             torta.save(update_fields=['stock'])
-            datos['mensaje'] = 'Su compra se ha relizado con exito, puede venir a a retiralo a la pasteleria'
+            datos['mensaje'] = 'Su compra se ha relizado con exito, puede venir a a retiralo a la pasteleria junto con su nombre de usuario de pagina para saber que usted la compro'
         else:
-            datos['mensaje'] = 'Error no hay stock de esa torta'
+            datos['mensaje'] = 'Error no se puede comprar esta torta, agotamiento de stock'
 
     return render(request,'core/listadocompra.html',datos)
 
