@@ -123,3 +123,7 @@
         margin-right: 100px; 
         margin-top: 20px;
     }
+
+    table input{
+    width: 370px;
+    }
