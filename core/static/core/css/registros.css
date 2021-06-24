@@ -164,10 +164,7 @@ font-family: 'Electrolize', sans-serif;}
 
 #logo{
     margin-right: 10px;
-
-
 }
-
 
 ul{
     font-family: 'lobster', cursive;
@@ -193,3 +190,7 @@ form .error{
 
 @media screen and (max-width:500px) {     .grid-container {         display: flex;         flex-direction: column;     } }
 
+label{
+    color: rgb(0, 0, 0);
+    font-family: 'lobster';
+}

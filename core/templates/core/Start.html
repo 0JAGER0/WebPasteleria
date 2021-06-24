@@ -81,7 +81,7 @@
             <br>
             {% if messages %}
             {% for message in messages %}
-            <div class="notification {{ message.tags}}">
+            <div id="notif_user" class="notification {{ message.tags}}">
                 {{ message }}
             </div>
             {% endfor %}
