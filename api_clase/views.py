@@ -1,13 +1,18 @@
 from django.shortcuts import render
 from rest_framework import serializers
+from rest_framework import permissions
 from core.models import listadoTortas
 from .serializers import TortaSerializer
 from rest_framework.response import Response
 from rest_framework.parsers import JSONParser
 from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+
 
 @api_view(['GET','POST'])
+
 def apiTortas(request):
     if request.method == 'GET':
         """
@@ -29,6 +34,7 @@ def apiTortas(request):
 
 
 @api_view(['GET','PUT','DELETE'])
+@permission_classes((IsAuthenticated,))
 def torta(request,pk):
     try:
         tortaa = listadoTortas.objects.get(idtorta=pk)
