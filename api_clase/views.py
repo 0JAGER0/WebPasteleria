@@ -12,7 +12,7 @@ from rest_framework.permissions import IsAuthenticated
 
 
 @api_view(['GET','POST'])
-
+@permission_classes((IsAuthenticated,))
 def apiTortas(request):
     if request.method == 'GET':
         """
@@ -42,7 +42,7 @@ def torta(request,pk):
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     """ 
-    GET: mostrar detalle de un vehiculo segun patente
+    GET: mostrar detalle de un torta segun id
     """        
     if request.method == 'GET':
         serializer = TortaSerializer(tortaa)
@@ -51,7 +51,7 @@ def torta(request,pk):
         
     elif request.method == 'PUT':
         """
-        PUT: editar un vehiculo por patente
+        PUT: editar un torta por id
         """
         data = JSONParser().parse(request)
         serializer = TortaSerializer(tortaa,data=data)
@@ -63,7 +63,7 @@ def torta(request,pk):
 
     elif request.method == 'DELETE':
         """
-        DELETE: Borrar un vehiculo por patente
+        DELETE: Borrar un torta por id
         """
         tortaa.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
