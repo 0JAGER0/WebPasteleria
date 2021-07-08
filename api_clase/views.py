@@ -32,7 +32,7 @@ def apiTortas(request):
 
 
 
-
+#Codigo por parte de Diego Concha, debido a problemas de no hacer commit en su plataforma de VisualStudio
 @api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
 def torta(request,pk):
