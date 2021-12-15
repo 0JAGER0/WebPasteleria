@@ -12,7 +12,7 @@ function mapeo_static() {
 
   //SERVIRA PARA ALMACENAR LA LATITUD Y LA LONGITUD, PARA DESPUES ALMACENARLAS DENTRO DE la latitud y la longitud
   function localizacion_persona(posicion) {
-
+ 
     var latitud = posicion.coords.latitude;
     var longitud = posicion.coords.longitude;
 
