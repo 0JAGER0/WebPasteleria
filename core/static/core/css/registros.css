@@ -16,14 +16,14 @@ body{
     margin: 10%;
     }
     
-
+ 
 .img{
     max-width: 150%;
 }
 
 .form{
     width: 450px;
-    background: #E9B35D;
+    background: #30a15b;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -43,7 +43,7 @@ body{
 
 .controls {
     width: 100%;
-    background: #EFC88B;
+    background: #30a15b;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;

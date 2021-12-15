@@ -62,37 +62,37 @@
     <br>
     <br>
     <div class="tabla_registro">
-    <form class="form" method="post">
-        {% csrf_token %}
-         <h4>Registrarse</h4>
-        <div class="BARRAz">
-        <label for="id_username">Nombre de usuario:</label>
-        <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username">
-        </div>
-        
-        <div class="BARRAz">
-        <label for="id_email">Email:</label>
-        <input type="email" name="email" required="" id="id_email">
-        </div>
+        <form class="form" method="post">
+            {% csrf_token %}
+            <h4>Registrarse</h4>
+            <div class="BARRAz">
+            <label for="id_username">Nombre de usuario:</label>
+            <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username">
+            </div>
+            
+            <div class="BARRAz">
+            <label for="id_email">Email:</label>
+            <input type="email" name="email" required="" id="id_email">
+            </div>
 
-        <div class="BARRAz">
-        <label for="id_password1">Contraseña:</label>
-        <input type="password" name="password1" required="" id="id_password1">
-        <p>La contraseña debe tener un minimo de 8 caracteres. <p> La contraseña no debe ser similar al nombre de usuario. <br><br></p>
-        <br>
-        </div>
+            <div class="BARRAz">
+            <label for="id_password1">Contraseña:</label>
+            <input type="password" name="password1" required="" id="id_password1">
+            <p>La contraseña debe tener un minimo de 8 caracteres. <p> La contraseña no debe ser similar al nombre de usuario. <br><br></p>
+            <br>
+            </div>
 
 
-        <div class="BARRAz">
-        <label for="id_password2">Confirma la contraseña:</label>
-        <input type="password" name="password2" required="" id="id_password2">
-        </div>
+            <div class="BARRAz">
+            <label for="id_password2">Confirma la contraseña:</label>
+            <input type="password" name="password2" required="" id="id_password2">
+            </div>
 
-        <div>
-        <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
+            <div>
+            <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
 
-        </div>
-   </form> 
+            </div>
+        </form> 
    </div>
      
     <div style="height:200px; background-color:#ffffff00; margin-top: 50px;">
